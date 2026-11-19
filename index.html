@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YWFEI — Young Women for the Future Empowerment Initiative | Nigeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        plumNight: '#12081F',
+                        plumDeep: '#180B28',
+                        plumVelvet: '#271342',
+                        ivoryCrisp: '#FCF9F5',
+                        champagneGold: '#C89D54',
+                        champagneLight: '#E5C384',
+                        orchidGlow: '#9B5DE5',
+                        lilacMist: '#C792EA',
+                        emeraldMint: '#34D399',
+                        coralBloom: '#F47296',
+                    },
+                    boxShadow: {
+                        glass: '0 24px 64px -16px rgba(7, 3, 15, 0.78), inset 0 1px 0 0 rgba(255, 255, 255, 0.16)',
+                        goldGlow: '0 14px 36px -8px rgba(200, 157, 84, 0.38)',
+                        prismAura: '0 26px 72px -15px rgba(155, 93, 229, 0.28), 0 12px 34px -12px rgba(56, 189, 248, 0.20)',
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        /* Base Nocturnal Royal Plum-Indigo Palette & Responsive Guardrails */
+        html, body {
+            background-color: #12081F;
+            color: #FCF9F5;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            max-width: 100vw;
+            overflow-x: clip;
+        }
+
+        /* Subtle Adire & Architectural Weave Pattern */
+        .adire-weave {
+            background-image:
+                radial-gradient(circle at 14% 16%, rgba(155, 93, 229, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 86% 24%, rgba(244, 114, 150, 0.09) 0%, transparent 42%),
+                radial-gradient(circle at 78% 78%, rgba(200, 157, 84, 0.10) 0%, transparent 46%),
+                linear-gradient(to right, rgba(255, 255, 255, 0.024) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.024) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 100% 100%, 56px 56px, 56px 56px;
+        }
+
+        /* Fluid Typography & Safe Viewport Sizing */
+        .fluid-hero-title {
+            font-size: clamp(2.15rem, 5.2vw, 4.1rem);
+            line-height: 1.08;
+        }
+
+        .fluid-section-title {
+            font-size: clamp(1.75rem, 3.8vw, 2.9rem);
+            line-height: 1.14;
+        }
+
+        .hero-viewport {
+            min-height: min(92dvh, 880px);
+        }
+
+        .safe-bottom-pad {
+            padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* True Frosted Glass Card with Subtle Prismatic / Rainbow Edge Aura */
+        .glass-prism-card {
+            position: relative;
+            background: linear-gradient(145deg, rgba(39, 19, 66, 0.72), rgba(24, 11, 40, 0.88));
+            backdrop-filter: blur(20px) saturate(140%);
+            -webkit-backdrop-filter: blur(20px) saturate(140%);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 24px 60px -18px rgba(7, 3, 15, 0.82), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .glass-prism-card::before {
+            content: "";
+            position: absolute;
+            inset: -1.5px;
+            border-radius: inherit;
+            padding: 1.5px;
+            background: linear-gradient(
+                125deg,
+                rgba(244, 114, 182, 0.45),
+                rgba(192, 132, 252, 0.50),
+                rgba(56, 189, 248, 0.38),
+                rgba(52, 211, 153, 0.35),
+                rgba(200, 157, 84, 0.52)
+            );
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0.44;
+            pointer-events: none;
+            transition: opacity 0.35s ease;
+        }
+
+        .glass-prism-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(229, 195, 132, 0.45);
+            box-shadow:
+                0 28px 68px -16px rgba(7, 3, 15, 0.88),
+                0 0 38px -8px rgba(192, 132, 252, 0.32),
+                0 0 28px -10px rgba(56, 189, 248, 0.22);
+        }
+
+        .glass-prism-card:hover::before {
+            opacity: 0.92;
+        }
+
+        /* Luminous Glowing Form Controls & Prismatic Modal Rim */
+        .glow-modal-shell {
+            position: relative;
+            background:
+                radial-gradient(circle at 12% 8%, rgba(168, 85, 247, 0.24), transparent 46%),
+                radial-gradient(circle at 88% 12%, rgba(212, 168, 87, 0.20), transparent 45%),
+                radial-gradient(circle at 50% 100%, rgba(244, 114, 182, 0.16), transparent 52%),
+                linear-gradient(155deg, rgba(36, 17, 62, 0.92), rgba(18, 8, 31, 0.96));
+            backdrop-filter: blur(26px) saturate(155%);
+            -webkit-backdrop-filter: blur(26px) saturate(155%);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow:
+                0 32px 90px -18px rgba(5, 2, 12, 0.92),
+                0 0 55px -10px rgba(168, 85, 247, 0.34),
+                0 0 38px -14px rgba(212, 168, 87, 0.28),
+                inset 0 1px 0 rgba(255, 255, 255, 0.22);
+        }
+
+        .glow-modal-shell::before {
+            content: "";
+            position: absolute;
+            inset: -1.5px;
+            border-radius: inherit;
+            padding: 1.5px;
+            background: linear-gradient(
+                130deg,
+                rgba(244, 114, 182, 0.65),
+                rgba(168, 85, 247, 0.72),
+                rgba(56, 189, 248, 0.52),
+                rgba(16, 185, 129, 0.48),
+                rgba(212, 168, 87, 0.72)
+            );
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0.78;
+            pointer-events: none;
+        }
+
+        .glow-input {
+            background: rgba(18, 8, 31, 0.68);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+            transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        }
+
+        .glow-input:hover {
+            border-color: rgba(212, 168, 87, 0.35);
+            background: rgba(26, 12, 44, 0.78);
+        }
+
+        .glow-input:focus {
+            outline: none;
+            border-color: rgba(229, 195, 132, 0.85);
+            background: rgba(30, 14, 51, 0.9);
+            box-shadow:
+                0 0 0 3px rgba(168, 85, 247, 0.22),
+                0 0 22px -4px rgba(212, 168, 87, 0.45);
+        }
+
+        .glow-tier-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+        }
+
+        .glow-tier-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(199, 146, 234, 0.45);
+            background: rgba(168, 85, 247, 0.08);
+        }
+
+        .glow-tier-card.is-selected {
+            border-color: rgba(229, 195, 132, 0.9);
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(212, 168, 87, 0.14));
+            box-shadow:
+                0 0 24px -5px rgba(212, 168, 87, 0.42),
+                0 0 18px -6px rgba(168, 85, 247, 0.35),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .glow-cta-primary {
+            box-shadow:
+                0 12px 32px -6px rgba(212, 168, 87, 0.45),
+                0 0 28px -8px rgba(168, 85, 247, 0.35);
+        }
+
+        .glow-cta-primary:hover {
+            box-shadow:
+                0 14px 38px -6px rgba(229, 195, 132, 0.65),
+                0 0 34px -6px rgba(168, 85, 247, 0.5);
+        }
+
+        /* Soft Prismatic / Rainbow Orb Glows */
+        .rainbow-orb-primary {
+            background: conic-gradient(
+                from 140deg at 50% 50%,
+                rgba(244, 114, 182, 0.24),
+                rgba(168, 85, 247, 0.28),
+                rgba(56, 189, 248, 0.22),
+                rgba(52, 211, 153, 0.20),
+                rgba(200, 157, 84, 0.26),
+                rgba(244, 114, 182, 0.24)
+            );
+            filter: blur(85px);
+        }
+
+        .rainbow-orb-secondary {
+            background: radial-gradient(circle at 30% 30%, rgba(192, 132, 252, 0.26), transparent 55%),
+                        radial-gradient(circle at 75% 35%, rgba(56, 189, 248, 0.20), transparent 55%),
+                        radial-gradient(circle at 50% 80%, rgba(200, 157, 84, 0.22), transparent 60%);
+            filter: blur(75px);
+        }
+
+        /* Hero & Story Crossfade + Ken Burns Motion */
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1.35s ease-in-out;
+            pointer-events: none;
+        }
+
+        .hero-slide.is-active {
+            opacity: 1;
+        }
+
+        .hero-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            transform: scale(1.02);
+            transition: transform 8s ease-out;
+        }
+
+        .hero-slide.is-active img {
+            transform: scale(1.08);
+        }
+
+        .story-slide {
+            transition: opacity 0.55s ease, transform 0.55s ease;
+        }
+
+        @keyframes fadeInModal {
+            from {
+                opacity: 0;
+                transform: translateY(14px) scale(0.985);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-reveal {
+            animation: fadeInModal 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        /* Floating Headline-Style Partners Ticker */
+        @keyframes partnerHeadlineFloat {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+
+        .partner-headline-track {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            will-change: transform;
+            animation: partnerHeadlineFloat 38s linear infinite;
+        }
+
+        .partner-headline-shell:hover .partner-headline-track,
+        .partner-headline-shell.is-paused .partner-headline-track {
+            animation-play-state: paused;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .partner-headline-track {
+                animation: none;
+                flex-wrap: wrap;
+                width: 100%;
+                gap: 0.5rem;
+            }
+            .hero-slide, .hero-slide img, .story-slide {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body class="adire-weave selection:bg-champagneGold/30 selection:text-ivoryCrisp antialiased">
+
+    <!-- Ambient Soft Prismatic / Rainbow Aura Glows -->
+    <div class="pointer-events-none fixed inset-0 overflow-hidden z-0" aria-hidden="true">
+        <div class="rainbow-orb-primary absolute -top-36 -left-28 w-[34rem] h-[34rem] rounded-full opacity-75"></div>
+        <div class="rainbow-orb-secondary absolute top-[28%] -right-32 w-[36rem] h-[36rem] rounded-full opacity-70"></div>
+        <div class="rainbow-orb-primary absolute bottom-0 left-[22%] w-[38rem] h-[28rem] rounded-full opacity-55"></div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- TOP STICKY GLASS NAVIGATION BAR                                       -->
+    <!-- ===================================================================== -->
+    <header id="topNav" class="sticky top-0 z-40 border-b border-white/10 bg-plumNight/80 backdrop-blur-xl transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
+            <!-- Brand Identity with Scoped Multi-Layered Emblem (Unique IDs: ywfei-hdr-*) -->
+            <a href="#top" class="flex items-center gap-3 group min-w-0">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-plumVelvet/90 border border-champagneGold/35 p-1.5 flex items-center justify-center shrink-0 shadow-glass group-hover:border-champagneLight transition-colors">
+                    <svg viewBox="300 100 400 560" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YWFEI Emblem">
+                        <defs>
+                            <linearGradient id="ywfei-hdr-goldCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFE7A3" />
+                                <stop offset="25%" stop-color="#F7C761" />
+                                <stop offset="55%" stop-color="#F09A5B" />
+                                <stop offset="80%" stop-color="#F2786E" />
+                                <stop offset="100%" stop-color="#E96172" />
+                            </linearGradient>
+                            <linearGradient id="ywfei-hdr-goldSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+                                <stop offset="45%" stop-color="#FFF2C9" stop-opacity="0.55" />
+                                <stop offset="100%" stop-color="#F7C761" stop-opacity="0" />
+                            </linearGradient>
+                            <linearGradient id="ywfei-hdr-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0F8A63" />
+                                <stop offset="50%" stop-color="#0B6E4F" />
+                                <stop offset="100%" stop-color="#075139" />
+                            </linearGradient>
+                            <linearGradient id="ywfei-hdr-royal" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#8B3FC4" />
+                                <stop offset="50%" stop-color="#6B21A8" />
+                                <stop offset="100%" stop-color="#4C1578" />
+                            </linearGradient>
+                            <linearGradient id="ywfei-hdr-pearl" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFFFFF" />
+                                <stop offset="40%" stop-color="#F4F0FF" />
+                                <stop offset="100%" stop-color="#D9CFE8" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M500 120 L540 210 L500 260 L460 210 Z" fill="url(#ywfei-hdr-pearl)" />
+                        <path d="M460 210 L500 260 L500 420 L420 300 Z" fill="url(#ywfei-hdr-goldCoral)" />
+                        <path d="M540 210 L580 300 L500 420 L500 260 Z" fill="url(#ywfei-hdr-royal)" />
+                        <path d="M420 300 L500 420 L500 560 L400 460 Z" fill="url(#ywfei-hdr-emerald)" />
+                        <path d="M580 300 L600 460 L500 560 L500 420 Z" fill="url(#ywfei-hdr-goldCoral)" />
+                        <path d="M500 120 L540 210 L500 260 L460 210 Z" fill="url(#ywfei-hdr-goldSheen)" opacity="0.85" />
+                        <path d="M500 260 C 545 285, 590 300, 615 355 C 635 400, 630 455, 600 500 C 585 522, 565 540, 545 560 C 535 575, 528 595, 530 615 L 545 640 L 505 620 C 498 590, 500 560, 512 535 C 525 505, 545 480, 555 450 C 570 405, 560 355, 528 320 C 512 300, 505 280, 500 260 Z" fill="url(#ywfei-hdr-goldCoral)" />
+                        <path d="M528 320 C 555 300, 610 290, 640 330 C 660 355, 655 395, 640 420 C 630 435, 615 445, 600 450 C 590 415, 575 380, 555 350 C 545 335, 535 328, 528 320 Z" fill="url(#ywfei-hdr-goldCoral)" opacity="0.9" />
+                        <path d="M528 320 C 540 315, 555 318, 560 330 C 565 342, 558 355, 545 358 C 532 361, 522 352, 520 340 C 518 330, 522 324, 528 320 Z" fill="url(#ywfei-hdr-pearl)" opacity="0.95" />
+                        <path d="M500 470 C 460 465, 400 480, 350 510 C 340 515, 335 525, 340 535 C 345 545, 360 548, 375 545 C 420 535, 465 520, 500 510 Z" fill="url(#ywfei-hdr-pearl)" />
+                        <path d="M500 470 C 540 465, 600 480, 650 510 C 660 515, 665 525, 660 535 C 655 545, 640 548, 625 545 C 580 535, 535 520, 500 510 Z" fill="url(#ywfei-hdr-emerald)" opacity="0.92" />
+                    </svg>
+                </div>
+                <div class="min-w-0">
+                    <div class="font-serif text-lg sm:text-xl font-bold tracking-wide text-champagneLight leading-none truncate">
+                        YWFEI <span class="text-ivoryCrisp/60 font-sans text-[11px] font-semibold tracking-widest ml-1">NIGERIA</span>
+                    </div>
+                    <div class="text-[10px] text-ivoryCrisp/65 tracking-wider uppercase truncate mt-0.5">
+                        Young Women for the Future Empowerment Initiative
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-ivoryCrisp/80">
+                <a href="#leadership" class="hover:text-champagneLight transition-colors">Leadership</a>
+                <a href="#pillars" class="hover:text-champagneLight transition-colors">Pillars</a>
+                <a href="#footprint" class="hover:text-champagneLight transition-colors">6 Zones</a>
+                <a href="#stewardship" class="hover:text-champagneLight transition-colors">Stewardship</a>
+            </nav>
+
+            <!-- Action CTAs -->
+            <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+                <button type="button" onclick="openModal('FELLOWSHIP')" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 text-xs font-semibold text-ivoryCrisp transition-all cursor-pointer">
+                    <span>Apply</span>
+                </button>
+                <button type="button" onclick="openModal('FUNDING')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-champagneGold via-champagneLight to-champagneGold text-plumNight text-xs font-bold uppercase tracking-wider shadow-goldGlow hover:brightness-105 transition-all cursor-pointer">
+                    <i class="fa-solid fa-crown text-[11px]"></i>
+                    <span>Fund &amp; Partner</span>
+                </button>
+                <button type="button" id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Toggle Menu" class="lg:hidden w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 flex items-center justify-center text-ivoryCrisp cursor-pointer">
+                    <i id="mobileMenuIcon" class="fa-solid fa-bars text-sm"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Collapsible Drawer -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 bg-plumDeep/95 backdrop-blur-2xl px-4 py-4 space-y-2">
+            <a href="#leadership" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-ivoryCrisp/85 hover:bg-white/5">Leadership &amp; Trustees</a>
+            <a href="#pillars" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-ivoryCrisp/85 hover:bg-white/5">Empowerment Pillars</a>
+            <a href="#footprint" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-ivoryCrisp/85 hover:bg-white/5">36 States &amp; 6 Zones</a>
+            <a href="#stewardship" onclick="closeMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-semibold text-ivoryCrisp/85 hover:bg-white/5">Impact &amp; Stewardship</a>
+            <div class="pt-2 grid grid-cols-2 gap-2">
+                <button type="button" onclick="closeMobileMenu(); openModal('FELLOWSHIP');" class="px-3 py-2.5 rounded-xl bg-white/10 text-xs font-bold text-ivoryCrisp">Apply for Fellowship</button>
+                <button type="button" onclick="closeMobileMenu(); openModal('FUNDING');" class="px-3 py-2.5 rounded-xl bg-champagneGold text-plumNight text-xs font-bold">Back YWFEI</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- FLOATING HEADLINE-STYLE PARTNERS TICKER BAR                           -->
+    <!-- ===================================================================== -->
+    <div id="partnerHeadlineBar" class="partner-headline-shell sticky top-16 sm:top-20 z-30 border-b border-white/10 bg-plumNight/85 backdrop-blur-xl">
+        <div class="max-w-full overflow-hidden py-2.5 flex items-center">
+            <div class="hidden md:flex items-center gap-2 pl-6 pr-4 shrink-0 border-r border-white/15 text-[10px] font-bold uppercase tracking-[0.22em] text-champagneGold">
+                <span class="w-2 h-2 rounded-full bg-emeraldMint animate-pulse"></span>
+                <span>Strategic Partners</span>
+            </div>
+
+            <div class="flex-1 overflow-hidden">
+                <div id="partnerHeadlineTrack" class="partner-headline-track"></div>
+            </div>
+
+            <div class="hidden sm:flex items-center gap-1.5 pl-3 pr-4 shrink-0 border-l border-white/10">
+                <button type="button" id="partnerTickerToggleBtn" onclick="togglePartnerTicker()" aria-label="Pause or resume partner headlines" class="w-7 h-7 rounded-lg bg-white/5 hover:bg-white/15 border border-white/10 flex items-center justify-center text-[11px] text-champagneLight transition-colors cursor-pointer">
+                    <i id="partnerTickerIcon" class="fa-solid fa-pause"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- HERO SECTION WITH CROSSFADE KEN BURNS PHOTOGRAPHY & EMBLEM CARD       -->
+    <!-- ===================================================================== -->
+    <section id="top" class="relative hero-viewport flex items-center overflow-hidden border-b border-white/10">
+        <!-- Crossfading Nigerian Photography Background Slides -->
+        <div id="heroSlideshow" class="absolute inset-0 z-0" aria-hidden="true">
+            <div class="hero-slide is-active">
+                <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Nigerian women leaders collaborating in executive strategy" />
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Young professionals building enterprise ventures and mentorship networks" />
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Strategic planning and leadership summit for women-led initiatives" />
+            </div>
+            <div class="hero-slide">
+                <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Emerging women leaders advancing innovation and community enterprise" />
+            </div>
+        </div>
+
+        <!-- Royal Plum-Indigo & Prismatic Scrim Overlay -->
+        <div class="absolute inset-0 z-[1] bg-gradient-to-br from-plumNight/92 via-plumDeep/84 to-plumNight/90"></div>
+        <div class="rainbow-orb-primary absolute -top-20 right-[10%] w-[30rem] h-[30rem] rounded-full z-[1] opacity-50 pointer-events-none"></div>
+
+        <!-- Hero Content Grid -->
+        <div class="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+                <!-- Left 8 Cols: Editorial Headline, Value Proposition & Metrics -->
+                <div class="lg:col-span-8 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-champagneGold/35 text-[11px] font-bold uppercase tracking-[0.2em] text-champagneLight">
+                        <span class="w-2 h-2 rounded-full bg-champagneGold"></span>
+                        <span>National Women’s Enterprise &amp; Leadership Foundation</span>
+                    </div>
+
+                    <h1 class="font-serif fluid-hero-title font-bold text-ivoryCrisp tracking-tight">
+                        Advancing <span class="italic text-champagneLight">Young Nigerian Women</span> Into Enterprise &amp; Leadership.
+                    </h1>
+
+                    <p class="text-sm sm:text-base lg:text-lg text-ivoryCrisp/85 leading-relaxed max-w-2xl">
+                        Headquartered in Abuja and active across all 36 states and the FCT, YWFEI equips young Nigerian women with seed capital, digital and agribusiness mastery, legal dignity, and executive pathways built for generational impact.
+                    </p>
+
+                    <div class="flex flex-wrap items-center gap-3.5 pt-1">
+                        <button type="button" onclick="openModal('FUNDING')" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-champagneGold via-champagneLight to-champagneGold text-plumNight text-xs sm:text-sm font-extrabold uppercase tracking-wider shadow-goldGlow hover:brightness-105 transition-all cursor-pointer">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            <span>Commit Grant or Partnership</span>
+                        </button>
+                        <button type="button" onclick="openModal('FELLOWSHIP')" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-bold text-ivoryCrisp transition-all cursor-pointer">
+                            <span>Apply for Cohort &amp; Grant</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-champagneLight"></i>
+                        </button>
+                    </div>
+
+                    <!-- Key National Metrics -->
+                    <div class="grid grid-cols-3 gap-3 sm:gap-5 pt-3 max-w-xl">
+                        <div class="glass-prism-card rounded-2xl p-3.5 sm:p-4">
+                            <div class="font-serif text-2xl sm:text-3xl font-bold text-champagneLight">36 + FCT</div>
+                            <div class="text-[11px] text-ivoryCrisp/70 font-medium mt-0.5">States &amp; 6 Zones</div>
+                        </div>
+                        <div class="glass-prism-card rounded-2xl p-3.5 sm:p-4">
+                            <div class="font-serif text-2xl sm:text-3xl font-bold text-lilacMist">18,400+</div>
+                            <div class="text-[11px] text-ivoryCrisp/70 font-medium mt-0.5">Young Women Reached</div>
+                        </div>
+                        <div class="glass-prism-card rounded-2xl p-3.5 sm:p-4">
+                            <div class="font-serif text-2xl sm:text-3xl font-bold text-emeraldMint">₦1.42B</div>
+                            <div class="text-[11px] text-ivoryCrisp/70 font-medium mt-0.5">Grants &amp; Capital Mobilized</div>
+                        </div>
+                    </div>
+
+                    <!-- Slideshow Controls -->
+                    <div class="flex items-center gap-3 pt-2">
+                        <div id="heroDots" class="flex items-center gap-2">
+                            <button type="button" onclick="goToHeroSlide(0)" aria-label="Slide 1" class="hero-dot w-7 h-2 rounded-full bg-champagneGold transition-all cursor-pointer"></button>
+                            <button type="button" onclick="goToHeroSlide(1)" aria-label="Slide 2" class="hero-dot w-2.5 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all cursor-pointer"></button>
+                            <button type="button" onclick="goToHeroSlide(2)" aria-label="Slide 3" class="hero-dot w-2.5 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all cursor-pointer"></button>
+                            <button type="button" onclick="goToHeroSlide(3)" aria-label="Slide 4" class="hero-dot w-2.5 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all cursor-pointer"></button>
+                        </div>
+                        <button type="button" id="heroPlayPauseBtn" onclick="toggleHeroSlideshow()" class="ml-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/15 border border-white/15 text-[11px] font-semibold text-ivoryCrisp/80 cursor-pointer">
+                            <i id="heroPlayPauseIcon" class="fa-solid fa-pause text-[10px]"></i>
+                            <span id="heroPlayPauseLabel">Pause</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right 4 Cols: Scoped Multi-Layered Emblem Centerpiece (Unique IDs: ywfei-hero-*) -->
+                <div class="lg:col-span-4 flex justify-center">
+                    <div class="glass-prism-card rounded-[2.25rem] p-5 sm:p-6 w-full max-w-[340px] text-center space-y-3 shadow-prismAura">
+                        <div class="relative mx-auto w-52 h-56 flex items-center justify-center">
+                            <svg viewBox="300 100 400 560" class="w-full h-full drop-shadow-[0_14px_28px_rgba(247,199,97,0.28)]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YWFEI Diamond, Soaring Silhouette and Open Book Emblem">
+                                <defs>
+                                    <linearGradient id="ywfei-hero-goldCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FFE7A3" />
+                                        <stop offset="25%" stop-color="#F7C761" />
+                                        <stop offset="55%" stop-color="#F09A5B" />
+                                        <stop offset="80%" stop-color="#F2786E" />
+                                        <stop offset="100%" stop-color="#E96172" />
+                                    </linearGradient>
+                                    <linearGradient id="ywfei-hero-goldSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+                                        <stop offset="45%" stop-color="#FFF2C9" stop-opacity="0.55" />
+                                        <stop offset="100%" stop-color="#F7C761" stop-opacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="ywfei-hero-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#0F8A63" />
+                                        <stop offset="50%" stop-color="#0B6E4F" />
+                                        <stop offset="100%" stop-color="#075139" />
+                                    </linearGradient>
+                                    <linearGradient id="ywfei-hero-royal" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#8B3FC4" />
+                                        <stop offset="50%" stop-color="#6B21A8" />
+                                        <stop offset="100%" stop-color="#4C1578" />
+                                    </linearGradient>
+                                    <linearGradient id="ywfei-hero-pearl" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#FFFFFF" />
+                                        <stop offset="40%" stop-color="#F4F0FF" />
+                                        <stop offset="100%" stop-color="#D9CFE8" />
+                                    </linearGradient>
+                                </defs>
+                                <g transform="translate(6, 10)" opacity="0.45">
+                                    <path d="M500 110 L540 200 L680 240 L590 340 L660 500 L500 640 L340 500 L410 340 L320 240 L460 200 Z" fill="url(#ywfei-hero-pearl)" stroke="#34D399" stroke-width="2" />
+                                </g>
+                                <path d="M500 120 L540 210 L500 260 L460 210 Z" fill="url(#ywfei-hero-pearl)" stroke="#E8E1F5" stroke-width="1.5" />
+                                <path d="M460 210 L500 260 L500 420 L420 300 Z" fill="url(#ywfei-hero-goldCoral)" stroke="#F7C761" stroke-width="1.5" />
+                                <path d="M540 210 L580 300 L500 420 L500 260 Z" fill="url(#ywfei-hero-royal)" stroke="#8B3FC4" stroke-width="1.5" />
+                                <path d="M420 300 L500 420 L500 560 L400 460 Z" fill="url(#ywfei-hero-emerald)" stroke="#0F8A63" stroke-width="1.5" />
+                                <path d="M580 300 L600 460 L500 560 L500 420 Z" fill="url(#ywfei-hero-goldCoral)" stroke="#F2786E" stroke-width="1.5" />
+                                <path d="M500 120 L540 210 L500 260 L460 210 Z" fill="url(#ywfei-hero-goldSheen)" opacity="0.85" />
+                                <path d="M500 260 C 545 285, 590 300, 615 355 C 635 400, 630 455, 600 500 C 585 522, 565 540, 545 560 C 535 575, 528 595, 530 615 L 545 640 L 505 620 C 498 590, 500 560, 512 535 C 525 505, 545 480, 555 450 C 570 405, 560 355, 528 320 C 512 300, 505 280, 500 260 Z" fill="url(#ywfei-hero-goldCoral)" stroke="#F09A5B" stroke-width="1.2" opacity="0.98" />
+                                <path d="M528 320 C 555 300, 610 290, 640 330 C 660 355, 655 395, 640 420 C 630 435, 615 445, 600 450 C 590 415, 575 380, 555 350 C 545 335, 535 328, 528 320 Z" fill="url(#ywfei-hero-goldCoral)" stroke="#E96172" stroke-width="1" opacity="0.9" />
+                                <path d="M528 320 C 540 315, 555 318, 560 330 C 565 342, 558 355, 545 358 C 532 361, 522 352, 520 340 C 518 330, 522 324, 528 320 Z" fill="url(#ywfei-hero-pearl)" opacity="0.95" />
+                                <path d="M500 470 C 460 465, 400 480, 350 510 C 340 515, 335 525, 340 535 C 345 545, 360 548, 375 545 C 420 535, 465 520, 500 510 Z" fill="url(#ywfei-hero-pearl)" stroke="#34D399" stroke-width="1.4" />
+                                <path d="M500 470 C 540 465, 600 480, 650 510 C 660 515, 665 525, 660 535 C 655 545, 640 548, 625 545 C 580 535, 535 520, 500 510 Z" fill="url(#ywfei-hero-emerald)" stroke="#34D399" stroke-width="1.4" opacity="0.92" />
+                                <path d="M500 470 L500 510" stroke="#FFFFFF" stroke-width="2" opacity="0.8" />
+                                <circle cx="500" cy="160" r="3.5" fill="#FFFFFF" opacity="0.95" />
+                                <circle cx="540" cy="245" r="2.8" fill="#F7C761" opacity="0.9" />
+                                <circle cx="455" cy="250" r="2.6" fill="#C792EA" opacity="0.9" />
+                                <circle cx="600" cy="355" r="3" fill="#F2786E" opacity="0.9" />
+                                <circle cx="410" cy="355" r="2.6" fill="#34D399" opacity="0.9" />
+                            </svg>
+                        </div>
+                        <div class="font-serif italic text-lg text-champagneLight">Rise. Shine. Lead.</div>
+                        <p class="text-[11px] text-ivoryCrisp/75 leading-relaxed">
+                            Knowledge, enterprise clarity, and upward mobility for young Nigerian women.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- LEADERSHIP & BOARD OF TRUSTEES GOVERNANCE                             -->
+    <!-- ===================================================================== -->
+    <section id="leadership" class="relative py-20 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div class="space-y-2 max-w-2xl">
+                <div class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                    Executive &amp; Trusteeship Governance
+                </div>
+                <h2 class="font-serif fluid-section-title font-bold text-ivoryCrisp">
+                    Guided by <span class="italic text-champagneLight">Vision, Patronage</span> &amp; Stewardship
+                </h2>
+            </div>
+            <p class="text-sm text-ivoryCrisp/75 max-w-md leading-relaxed">
+                Select any leadership card to inspect their mandate, governance charter, and institutional alignment across Nigeria.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Leader 1: Founder & Executive Director -->
+            <article onclick="openLeaderModal('founder')" class="glass-prism-card rounded-[2rem] p-6 flex flex-col justify-between cursor-pointer group">
+                <div class="space-y-5">
+                    <div class="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-plumVelvet/80 border border-white/10">
+                        <img
+                            src="https://raw.githubusercontent.com/hackloom-creator/ywfei/5cf3a31d40b6b3676f1f749aecbe1a39b7c2692c/file_glyikm.jpg"
+                            alt="Princess Atikat Ajannah — Founder & Executive Director"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                        />
+                        <div class="hidden w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-plumVelvet via-plumDeep to-plumNight p-6 text-center">
+                            <span class="font-serif text-5xl font-bold text-champagneLight tracking-wider">AA</span>
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-lilacMist mt-2">Founder Portrait</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-plumNight/85 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-plumNight/80 backdrop-blur-md border border-champagneGold/35 text-[10px] font-bold uppercase tracking-wider text-champagneLight">
+                            Founder &amp; Executive Director
+                        </span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="font-serif text-2xl font-bold text-ivoryCrisp group-hover:text-champagneLight transition-colors">
+                            Princess Atikat Ajannah
+                        </h3>
+                        <p class="text-xs sm:text-sm text-ivoryCrisp/75 leading-relaxed">
+                            Leads national program strategy, young women’s enterprise mobilization, fellowship selection, and direct empowerment delivery from Abuja.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-champagneLight">
+                    <span>View Mandate</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </article>
+
+            <!-- Leader 2: Grand Patron -->
+            <article onclick="openLeaderModal('patron')" class="glass-prism-card rounded-[2rem] p-6 flex flex-col justify-between cursor-pointer group">
+                <div class="space-y-5">
+                    <div class="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-plumVelvet/80 border border-white/10">
+                        <img
+                            src="https://raw.githubusercontent.com/hackloom-creator/ywfei/main/images%20(5).jpeg"
+                            alt="Barr. Seyi Tinubu — Grand Patron"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                        />
+                        <div class="hidden w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-plumVelvet via-plumDeep to-plumNight p-6 text-center">
+                            <span class="font-serif text-5xl font-bold text-lilacMist tracking-wider">ST</span>
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-champagneGold mt-2">Patron Portrait</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-plumNight/85 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-plumNight/80 backdrop-blur-md border border-lilacMist/40 text-[10px] font-bold uppercase tracking-wider text-lilacMist">
+                            Grand Patron
+                        </span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="font-serif text-2xl font-bold text-ivoryCrisp group-hover:text-champagneLight transition-colors">
+                            Barr. Seyi Tinubu
+                        </h3>
+                        <p class="text-xs sm:text-sm text-ivoryCrisp/75 leading-relaxed">
+                            Champions youth-led enterprise scale, strategic patronage, and commercial ecosystem bridges linking emerging women founders with opportunity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-champagneLight">
+                    <span>View Patronage Charter</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </article>
+
+            <!-- Leader 3: Chairman, Board of Trustees -->
+            <article onclick="openLeaderModal('chairman')" class="glass-prism-card rounded-[2rem] p-6 flex flex-col justify-between cursor-pointer group">
+                <div class="space-y-5">
+                    <div class="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-plumVelvet/80 border border-white/10">
+                        <img
+                            src="assets/aliyu.png"
+                            alt="Alhaji Aliyu Ajannah — Chairman, Board of Trustees"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                            onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');"
+                        />
+                        <div class="hidden w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-plumVelvet via-plumDeep to-plumNight p-6 text-center">
+                            <span class="font-serif text-5xl font-bold text-emeraldMint tracking-wider">AA</span>
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-champagneLight mt-2">Chairman Portrait</span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-plumNight/85 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-plumNight/80 backdrop-blur-md border border-emeraldMint/40 text-[10px] font-bold uppercase tracking-wider text-emeraldMint">
+                            Chairman, Board of Trustees
+                        </span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="font-serif text-2xl font-bold text-ivoryCrisp group-hover:text-champagneLight transition-colors">
+                            Alhaji Aliyu Ajannah
+                        </h3>
+                        <p class="text-xs sm:text-sm text-ivoryCrisp/75 leading-relaxed">
+                            Oversees trusteeship governance, fiduciary controls, grant disbursement integrity, and long-term endowment stewardship for institutional donors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-5 mt-5 border-t border-white/10 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-champagneLight">
+                    <span>View Trusteeship Charter</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FILTERABLE EMPOWERMENT PILLARS WITH EXPANDABLE CURRICULUM/GRANTS   -->
+    <!-- ===================================================================== -->
+    <section id="pillars" class="relative py-20 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+            <div class="space-y-2 max-w-2xl">
+                <div class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                    Four Core Empowerment Pillars
+                </div>
+                <h2 class="font-serif fluid-section-title font-bold text-ivoryCrisp">
+                    Structured Pathways <span class="italic text-champagneLight">From Potential</span> to Scale
+                </h2>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap gap-2" id="pillarFilterBar">
+                <button type="button" data-filter="ALL" onclick="filterPillars('ALL', this)" class="pillar-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-champagneGold text-plumNight transition-all cursor-pointer">
+                    All Pillars
+                </button>
+                <button type="button" data-filter="CAPITAL" onclick="filterPillars('CAPITAL', this)" class="pillar-filter-btn px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                    Enterprise &amp; Grants
+                </button>
+                <button type="button" data-filter="SKILLS" onclick="filterPillars('SKILLS', this)" class="pillar-filter-btn px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                    Digital &amp; Skills
+                </button>
+                <button type="button" data-filter="LEADERSHIP" onclick="filterPillars('LEADERSHIP', this)" class="pillar-filter-btn px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                    Leadership &amp; Rights
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Pillar 1 -->
+            <div data-category="CAPITAL" class="pillar-card glass-prism-card rounded-[2rem] p-6 sm:p-7 space-y-4">
+                <div class="flex items-center justify-between gap-3">
+                    <span class="w-11 h-11 rounded-2xl bg-champagneGold/15 border border-champagneGold/35 flex items-center justify-center text-champagneLight">
+                        <i class="fa-solid fa-coins text-lg"></i>
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-wider text-emeraldMint">
+                        ₦500K – ₦5M Tranches
+                    </span>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-ivoryCrisp">
+                    Enterprise &amp; Seed Capital
+                </h3>
+                <p class="text-sm text-ivoryCrisp/80 leading-relaxed">
+                    Non-dilutive micro-grants, equipment co-financing, and structured business mentorship for young women launching or scaling agro-processing, fashion, retail, and service enterprises.
+                </p>
+                <div id="pillarDetail1" class="hidden pt-3 border-t border-white/10 text-xs text-ivoryCrisp/75 space-y-2">
+                    <p><strong class="text-champagneLight">Eligibility:</strong> Nigerian women aged 18–35 with verified CAC registration or cooperative endorsement and a 12-month cashflow plan.</p>
+                    <p><strong class="text-champagneLight">Milestone Controls:</strong> Tranche disbursement tied to supplier invoices, bookkeeping clinics, and quarterly impact audits.</p>
+                </div>
+                <div class="pt-2 flex items-center justify-between">
+                    <button type="button" onclick="togglePillarDetail('pillarDetail1', this)" class="text-xs font-bold uppercase tracking-wider text-champagneLight hover:underline cursor-pointer">
+                        <span>Inspect Grant Criteria</span>
+                    </button>
+                    <button type="button" onclick="openModal('FELLOWSHIP', 'Enterprise Seed Grant Track')" class="text-xs font-bold text-lilacMist hover:text-ivoryCrisp cursor-pointer">
+                        Apply Track <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div data-category="SKILLS" class="pillar-card glass-prism-card rounded-[2rem] p-6 sm:p-7 space-y-4">
+                <div class="flex items-center justify-between gap-3">
+                    <span class="w-11 h-11 rounded-2xl bg-orchidGlow/20 border border-lilacMist/35 flex items-center justify-center text-lilacMist">
+                        <i class="fa-solid fa-laptop-code text-lg"></i>
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-wider text-lilacMist">
+                        16-Week Intensive
+                    </span>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-ivoryCrisp">
+                    Digital Commerce &amp; AI Workflows
+                </h3>
+                <p class="text-sm text-ivoryCrisp/80 leading-relaxed">
+                    Practical training in e-commerce storefronts, payment gateways, data literacy, product photography, and applied AI workflows that expand reach beyond local street markets.
+                </p>
+                <div id="pillarDetail2" class="hidden pt-3 border-t border-white/10 text-xs text-ivoryCrisp/75 space-y-2">
+                    <p><strong class="text-champagneLight">Curriculum:</strong> Digital merchandising, social &amp; export logistics, financial record automation, and practical AI productivity.</p>
+                    <p><strong class="text-champagneLight">Outcome:</strong> Capstone launch of a live digital storefront or tech-enabled service portfolio with mentor review.</p>
+                </div>
+                <div class="pt-2 flex items-center justify-between">
+                    <button type="button" onclick="togglePillarDetail('pillarDetail2', this)" class="text-xs font-bold uppercase tracking-wider text-champagneLight hover:underline cursor-pointer">
+                        <span>Inspect Curriculum</span>
+                    </button>
+                    <button type="button" onclick="openModal('FELLOWSHIP', 'Digital Commerce & AI Cohort')" class="text-xs font-bold text-lilacMist hover:text-ivoryCrisp cursor-pointer">
+                        Join Cohort <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div data-category="LEADERSHIP" class="pillar-card glass-prism-card rounded-[2rem] p-6 sm:p-7 space-y-4">
+                <div class="flex items-center justify-between gap-3">
+                    <span class="w-11 h-11 rounded-2xl bg-emeraldMint/15 border border-emeraldMint/35 flex items-center justify-center text-emeraldMint">
+                        <i class="fa-solid fa-landmark-dome text-lg"></i>
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-wider text-emeraldMint">
+                        Executive &amp; Policy Track
+                    </span>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-ivoryCrisp">
+                    Civic, Policy &amp; Executive Leadership
+                </h3>
+                <p class="text-sm text-ivoryCrisp/80 leading-relaxed">
+                    Leadership fellowships preparing young Nigerian women for board participation, public policy advocacy, community governance, and executive decision-making roles.
+                </p>
+                <div id="pillarDetail3" class="hidden pt-3 border-t border-white/10 text-xs text-ivoryCrisp/75 space-y-2">
+                    <p><strong class="text-champagneLight">Modules:</strong> Public policy analysis, boardroom governance, strategic communications, and coalition building.</p>
+                    <p><strong class="text-champagneLight">Placement:</strong> Policy briefs, town-hall roundtables, and executive shadowing across partner institutions.</p>
+                </div>
+                <div class="pt-2 flex items-center justify-between">
+                    <button type="button" onclick="togglePillarDetail('pillarDetail3', this)" class="text-xs font-bold uppercase tracking-wider text-champagneLight hover:underline cursor-pointer">
+                        <span>Inspect Fellowship Track</span>
+                    </button>
+                    <button type="button" onclick="openModal('MENTORSHIP', 'Executive & Policy Mentorship')" class="text-xs font-bold text-lilacMist hover:text-ivoryCrisp cursor-pointer">
+                        Mentor or Fellow <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div data-category="LEADERSHIP" class="pillar-card glass-prism-card rounded-[2rem] p-6 sm:p-7 space-y-4">
+                <div class="flex items-center justify-between gap-3">
+                    <span class="w-11 h-11 rounded-2xl bg-coralBloom/15 border border-coralBloom/35 flex items-center justify-center text-coralBloom">
+                        <i class="fa-solid fa-shield-heart text-lg"></i>
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-wider text-coralBloom">
+                        Dignity &amp; Protection
+                    </span>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-ivoryCrisp">
+                    Health Access, Legal Aid &amp; Safety
+                </h3>
+                <p class="text-sm text-ivoryCrisp/80 leading-relaxed">
+                    Wrap-around support connecting young women with preventive health screenings, legal literacy, contract &amp; IP protection for founders, and safe community spaces.
+                </p>
+                <div id="pillarDetail4" class="hidden pt-3 border-t border-white/10 text-xs text-ivoryCrisp/75 space-y-2">
+                    <p><strong class="text-champagneLight">Safeguards:</strong> Confidential legal clinics, business registration guidance, and mental &amp; maternal wellness referrals.</p>
+                    <p><strong class="text-champagneLight">Standard:</strong> Zero-tolerance safeguarding protocols across every YWFEI hub, camp, and training venue.</p>
+                </div>
+                <div class="pt-2 flex items-center justify-between">
+                    <button type="button" onclick="togglePillarDetail('pillarDetail4', this)" class="text-xs font-bold uppercase tracking-wider text-champagneLight hover:underline cursor-pointer">
+                        <span>Inspect Safeguards</span>
+                    </button>
+                    <button type="button" onclick="openModal('PARTNERSHIP', 'Legal, Health & Safeguarding Partner')" class="text-xs font-bold text-lilacMist hover:text-ivoryCrisp cursor-pointer">
+                        Partner With Us <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 6-GEOPOLITICAL-ZONE NATIONAL FOOTPRINT EXPLORER                    -->
+    <!-- ===================================================================== -->
+    <section id="footprint" class="relative py-20 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+        <div class="space-y-2 max-w-2xl mb-8">
+            <div class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                National Footprint • 36 States &amp; FCT
+            </div>
+            <h2 class="font-serif fluid-section-title font-bold text-ivoryCrisp">
+                Six Geopolitical Zones, <span class="italic text-champagneLight">One Unified Mandate</span>
+            </h2>
+        </div>
+
+        <!-- Zone Buttons -->
+        <div id="zoneSelector" class="flex gap-2 overflow-x-auto no-scrollbar pb-3 mb-6">
+            <button type="button" data-zone="NC" onclick="selectZone('NC', this)" class="zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-champagneGold text-plumNight transition-all cursor-pointer">
+                North-Central (FCT + 6)
+            </button>
+            <button type="button" data-zone="SW" onclick="selectZone('SW', this)" class="zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                South-West (6 States)
+            </button>
+            <button type="button" data-zone="NW" onclick="selectZone('NW', this)" class="zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                North-West (7 States)
+            </button>
+            <button type="button" data-zone="SS" onclick="selectZone('SS', this)" class="zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                South-South (6 States)
+            </button>
+            <button type="button" data-zone="SE" onclick="selectZone('SE', this)" class="zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                South-East (5 States)
+            </button>
+            <button type="button" data-zone="NE" onclick="selectZone('NE', this)" class="zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer">
+                North-East (6 States)
+            </button>
+        </div>
+
+        <!-- Active Zone Panel -->
+        <div class="glass-prism-card rounded-[2rem] p-6 sm:p-9 space-y-6">
+            <div class="space-y-2">
+                <div id="zoneEyebrow" class="text-xs font-bold uppercase tracking-[0.2em] text-champagneGold">
+                    North-Central Zone • Policy, Agribusiness &amp; Youth Hubs
+                </div>
+                <h3 id="zoneTitle" class="font-serif text-2xl sm:text-3xl font-bold text-ivoryCrisp">
+                    Abuja (FCT), Kwara, Niger, Benue, Plateau, Kogi &amp; Nasarawa
+                </h3>
+                <p id="zoneSummary" class="text-sm sm:text-base text-ivoryCrisp/80 leading-relaxed max-w-3xl">
+                    Anchored by YWFEI’s secretariat in Abuja, North-Central coordinates federal/institutional partnerships alongside agribusiness processing, digital skills, and leadership clinics across middle-belt communities.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+                <div class="p-4 rounded-2xl bg-white/[0.04] border border-white/10">
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-champagneGold">Anchor Hubs</div>
+                    <div id="zoneHubs" class="font-serif text-lg font-bold text-ivoryCrisp mt-1">Abuja • Ilorin • Jos</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/[0.04] border border-white/10">
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-lilacMist">Women Reached</div>
+                    <div id="zoneReached" class="font-serif text-2xl sm:text-3xl font-bold text-ivoryCrisp mt-1">3,450+</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/[0.04] border border-white/10">
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-emeraldMint">Grants &amp; Capital</div>
+                    <div id="zoneGrants" class="font-serif text-2xl sm:text-3xl font-bold text-ivoryCrisp mt-1">₦260M</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/[0.04] border border-white/10">
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-sky-300">Primary Focus</div>
+                    <div id="zoneTrack" class="font-serif text-lg font-bold text-ivoryCrisp mt-1">Civic &amp; Agro-Value</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- BENEFICIARY STORIES & AUDITED STEWARDSHIP / 2026–2027 MILESTONES     -->
+    <!-- ===================================================================== -->
+    <section id="stewardship" class="relative py-20 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <!-- Left 6 Cols: Crossfading Beneficiary Stories -->
+            <div class="lg:col-span-6 glass-prism-card rounded-[2rem] p-6 sm:p-8 space-y-6">
+                <div class="flex items-center justify-between gap-2">
+                    <span class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                        Fellow &amp; Founder Voices
+                    </span>
+                    <div class="flex items-center gap-2">
+                        <button type="button" onclick="prevStory()" aria-label="Previous Story" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 flex items-center justify-center text-ivoryCrisp cursor-pointer">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                        </button>
+                        <button type="button" onclick="nextStory()" aria-label="Next Story" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 flex items-center justify-center text-ivoryCrisp cursor-pointer">
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="storyCardBody" class="story-slide space-y-5">
+                    <div class="flex items-center gap-4">
+                        <img
+                            id="storyAvatar"
+                            src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400"
+                            alt="Zainab Abdullahi"
+                            class="w-16 h-16 rounded-2xl object-cover object-top border border-champagneGold/40 shrink-0"
+                            onerror="this.src='https://placehold.co/160x160/271342/E5C384?text=ZA';"
+                        />
+                        <div>
+                            <h3 id="storyName" class="font-serif text-2xl font-bold text-ivoryCrisp">Zainab Abdullahi</h3>
+                            <p id="storyMeta" class="text-xs font-semibold text-champagneLight">Agro-Processing Cooperative Lead • Kano (North-West)</p>
+                        </div>
+                    </div>
+                    <blockquote id="storyQuote" class="text-sm sm:text-base text-ivoryCrisp/85 italic leading-relaxed border-l-2 border-champagneGold/60 pl-4">
+                        “With YWFEI equipment co-financing and bookkeeping mentorship, our women’s sesame and hibiscus processing unit expanded from seasonal home batches to year-round regional supply contracts employing 14 young women.”
+                    </blockquote>
+                </div>
+
+                <div id="storyDots" class="flex items-center gap-2 pt-1">
+                    <button type="button" onclick="setStory(0)" aria-label="Story 1" class="story-dot w-6 h-2 rounded-full bg-champagneGold transition-all cursor-pointer"></button>
+                    <button type="button" onclick="setStory(1)" aria-label="Story 2" class="story-dot w-2.5 h-2 rounded-full bg-white/25 transition-all cursor-pointer"></button>
+                    <button type="button" onclick="setStory(2)" aria-label="Story 3" class="story-dot w-2.5 h-2 rounded-full bg-white/25 transition-all cursor-pointer"></button>
+                </div>
+            </div>
+
+            <!-- Right 6 Cols: 86% / 9% / 5% Grant Stewardship & 2026–2027 Milestones -->
+            <div class="lg:col-span-6 glass-prism-card rounded-[2rem] p-6 sm:p-8 space-y-6">
+                <div class="flex items-start justify-between gap-4">
+                    <div class="space-y-1">
+                        <div class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                            Fiduciary Discipline &amp; Roadmap
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-ivoryCrisp">
+                            Grant Allocation &amp; <span class="italic text-champagneLight">2026–2027</span> Milestones
+                        </h3>
+                    </div>
+                    <!-- Scoped Governance Crest Accent (Unique IDs: ywfei-gov-*) -->
+                    <div class="w-11 h-11 rounded-xl bg-plumVelvet/90 border border-champagneGold/30 p-1.5 shrink-0">
+                        <svg viewBox="300 100 400 560" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YWFEI Stewardship Crest">
+                            <defs>
+                                <linearGradient id="ywfei-gov-goldCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFE7A3" />
+                                    <stop offset="55%" stop-color="#F09A5B" />
+                                    <stop offset="100%" stop-color="#E96172" />
+                                </linearGradient>
+                                <linearGradient id="ywfei-gov-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0F8A63" />
+                                    <stop offset="100%" stop-color="#075139" />
+                                </linearGradient>
+                                <linearGradient id="ywfei-gov-royal" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#8B3FC4" />
+                                    <stop offset="100%" stop-color="#4C1578" />
+                                </linearGradient>
+                                <linearGradient id="ywfei-gov-pearl" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFFFFF" />
+                                    <stop offset="100%" stop-color="#D9CFE8" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M500 120 L540 210 L500 260 L460 210 Z" fill="url(#ywfei-gov-pearl)" />
+                            <path d="M460 210 L500 260 L500 420 L420 300 Z" fill="url(#ywfei-gov-goldCoral)" />
+                            <path d="M540 210 L580 300 L500 420 L500 260 Z" fill="url(#ywfei-gov-royal)" />
+                            <path d="M420 300 L500 420 L500 560 L400 460 Z" fill="url(#ywfei-gov-emerald)" />
+                            <path d="M580 300 L600 460 L500 560 L500 420 Z" fill="url(#ywfei-gov-goldCoral)" />
+                            <path d="M500 470 C 460 465, 400 480, 350 510 L 500 510 Z" fill="url(#ywfei-gov-pearl)" />
+                            <path d="M500 470 C 540 465, 600 480, 650 510 L 500 510 Z" fill="url(#ywfei-gov-emerald)" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- 86% / 9% / 5% Allocation Bars -->
+                <div class="space-y-3.5">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-ivoryCrisp">Direct Grants, Training &amp; Field Programs</span>
+                            <span class="text-emeraldMint font-bold">86%</span>
+                        </div>
+                        <div class="h-2.5 rounded-full bg-white/10 overflow-hidden">
+                            <div class="h-full w-[86%] rounded-full bg-gradient-to-r from-emeraldMint to-champagneLight"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-ivoryCrisp">Monitoring, Verification &amp; Legal Safeguards</span>
+                            <span class="text-champagneLight font-bold">9%</span>
+                        </div>
+                        <div class="h-2.5 rounded-full bg-white/10 overflow-hidden">
+                            <div class="h-full w-[9%] rounded-full bg-champagneGold"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-ivoryCrisp">Governance, Audit &amp; Secretariat Operations</span>
+                            <span class="text-lilacMist font-bold">5%</span>
+                        </div>
+                        <div class="h-2.5 rounded-full bg-white/10 overflow-hidden">
+                            <div class="h-full w-[5%] rounded-full bg-lilacMist"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2026–2027 Milestones -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-white/10 text-xs">
+                    <div class="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10">
+                        <div class="font-bold text-champagneLight">Q2–Q3 2026 • National Scale</div>
+                        <p class="text-ivoryCrisp/75 mt-1 leading-relaxed">Rollout of 24 state-level enterprise clinics and digital commerce bootcamps.</p>
+                    </div>
+                    <div class="p-3.5 rounded-2xl bg-white/[0.04] border border-white/10">
+                        <div class="font-bold text-lilacMist">Q4 2026–2027 • Endowment &amp; Impact</div>
+                        <p class="text-ivoryCrisp/75 mt-1 leading-relaxed">Independent fiduciary audit publication and multi-zone women’s trade showcase.</p>
+                    </div>
+                </div>
+
+                <div class="pt-1 flex flex-wrap gap-3">
+                    <button type="button" onclick="openModal('FUNDING')" class="px-5 py-3 rounded-xl bg-champagneGold text-plumNight text-xs font-extrabold uppercase tracking-wider hover:brightness-105 transition-all cursor-pointer">
+                        Sponsor a Cohort or Grant
+                    </button>
+                    <button type="button" onclick="openModal('PLEDGE')" class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 border border-white/15 text-xs font-bold text-ivoryCrisp transition-all cursor-pointer">
+                        Make a Philanthropic Pledge
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FOOTER WITH SCOPED MULTI-LAYERED EMBLEM (Unique IDs: ywfei-ftr-*)     -->
+    <!-- ===================================================================== -->
+    <footer class="relative border-t border-white/10 bg-plumNight/95 pt-14 pb-24 sm:pb-14 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-2xl bg-plumVelvet/90 border border-champagneGold/35 p-2 flex items-center justify-center shrink-0">
+                    <svg viewBox="300 100 400 560" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="YWFEI Footer Emblem">
+                        <defs>
+                            <linearGradient id="ywfei-ftr-goldCoral" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFE7A3" />
+                                <stop offset="55%" stop-color="#F09A5B" />
+                                <stop offset="100%" stop-color="#E96172" />
+                            </linearGradient>
+                            <linearGradient id="ywfei-ftr-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0F8A63" />
+                                <stop offset="100%" stop-color="#075139" />
+                            </linearGradient>
+                            <linearGradient id="ywfei-ftr-royal" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#8B3FC4" />
+                                <stop offset="100%" stop-color="#4C1578" />
+                            </linearGradient>
+                            <linearGradient id="ywfei-ftr-pearl" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#FFFFFF" />
+                                <stop offset="100%" stop-color="#D9CFE8" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M500 120 L540 210 L500 260 L460 210 Z" fill="url(#ywfei-ftr-pearl)" />
+                        <path d="M460 210 L500 260 L500 420 L420 300 Z" fill="url(#ywfei-ftr-goldCoral)" />
+                        <path d="M540 210 L580 300 L500 420 L500 260 Z" fill="url(#ywfei-ftr-royal)" />
+                        <path d="M420 300 L500 420 L500 560 L400 460 Z" fill="url(#ywfei-ftr-emerald)" />
+                        <path d="M580 300 L600 460 L500 560 L500 420 Z" fill="url(#ywfei-ftr-goldCoral)" />
+                        <path d="M500 470 C 460 465, 400 480, 350 510 L 500 510 Z" fill="url(#ywfei-ftr-pearl)" />
+                        <path d="M500 470 C 540 465, 600 480, 650 510 L 500 510 Z" fill="url(#ywfei-ftr-emerald)" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="font-serif text-lg font-bold text-champagneLight">
+                        Young Women for the Future Empowerment Initiative (YWFEI)
+                    </div>
+                    <p class="text-xs text-ivoryCrisp/65 mt-0.5">
+                        Abuja Secretariat • Operating Across All 36 States &amp; FCT, Nigeria
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-xs text-ivoryCrisp/70">
+                <span>Founder: <strong class="text-ivoryCrisp">Princess Atikat Ajannah</strong></span>
+                <span>•</span>
+                <span>Grand Patron: <strong class="text-ivoryCrisp">Barr. Seyi Tinubu</strong></span>
+                <span>•</span>
+                <span>BOT Chair: <strong class="text-ivoryCrisp">Alhaji Aliyu Ajannah</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- MOBILE STICKY QUICK ACTION BAR                                        -->
+    <!-- ===================================================================== -->
+    <div class="sm:hidden fixed bottom-0 inset-x-0 z-30 bg-plumNight/90 backdrop-blur-xl border-t border-white/10 px-4 py-2.5 safe-bottom-pad">
+        <div class="grid grid-cols-2 gap-2.5">
+            <button type="button" onclick="openModal('FELLOWSHIP')" class="py-2.5 px-3 rounded-xl bg-white/10 border border-white/15 text-xs font-bold text-ivoryCrisp cursor-pointer">
+                Apply Now
+            </button>
+            <button type="button" onclick="openModal('FUNDING')" class="py-2.5 px-3 rounded-xl bg-champagneGold text-plumNight text-xs font-extrabold uppercase tracking-wider cursor-pointer">
+                Fund / Partner
+            </button>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- PARTNER & MOU DETAILS MODAL DRAWER                                    -->
+    <!-- ===================================================================== -->
+    <div id="partnerDrawerModal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-4" onclick="if(event.target===this) closePartnerDrawer()">
+        <div class="modal-reveal glass-prism-card rounded-[2rem] max-w-2xl w-full p-6 sm:p-8 space-y-5 relative max-h-[90dvh] overflow-y-auto">
+            <button type="button" onclick="closePartnerDrawer()" aria-label="Close Partner Details" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-ivoryCrisp cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                Institutional &amp; Enterprise Ecosystem • Nigeria
+            </div>
+
+            <div id="partnerDrawerPills" class="flex flex-wrap gap-1.5 pt-1"></div>
+
+            <div class="space-y-2 pt-1">
+                <span id="partnerCategoryBadge" class="inline-block px-3 py-1 rounded-full bg-orchidGlow/20 border border-lilacMist/35 text-[11px] font-bold uppercase tracking-wider text-lilacMist"></span>
+                <h3 id="partnerDrawerName" class="font-serif text-2xl sm:text-3xl font-bold text-ivoryCrisp"></h3>
+                <p id="partnerDrawerFocus" class="text-sm text-ivoryCrisp/85 leading-relaxed"></p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs">
+                <div class="p-4 rounded-2xl bg-white/[0.04] border border-white/10 space-y-1">
+                    <div class="font-bold uppercase tracking-wider text-champagneLight">Collaboration &amp; MOU Scope</div>
+                    <p id="partnerDrawerMou" class="text-ivoryCrisp/80 leading-relaxed"></p>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/[0.04] border border-white/10 space-y-1">
+                    <div class="font-bold uppercase tracking-wider text-emeraldMint">Target Beneficiary Impact</div>
+                    <p id="partnerDrawerImpact" class="text-ivoryCrisp/80 leading-relaxed"></p>
+                </div>
+            </div>
+
+            <div class="pt-2 flex flex-wrap items-center justify-between gap-3 border-t border-white/10">
+                <span class="text-[11px] text-ivoryCrisp/60">
+                    Co-design a state, zonal, or national women’s empowerment track with YWFEI.
+                </span>
+                <button type="button" id="partnerDrawerActionBtn" class="px-5 py-3 rounded-xl bg-gradient-to-r from-champagneGold via-champagneLight to-champagneGold text-plumNight text-xs font-extrabold uppercase tracking-wider shadow-goldGlow hover:brightness-105 transition-all cursor-pointer">
+                    Initiate Partnership With This Partner Track
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LEADERSHIP MANDATE MODAL                                              -->
+    <!-- ===================================================================== -->
+    <div id="leaderModal" class="hidden fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-4" onclick="if(event.target===this) closeLeaderModal()">
+        <div class="modal-reveal glass-prism-card rounded-[2rem] max-w-xl w-full p-6 sm:p-8 space-y-5 relative max-h-[90dvh] overflow-y-auto">
+            <button type="button" onclick="closeLeaderModal()" aria-label="Close" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-ivoryCrisp cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="leaderModalRole" class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold"></div>
+            <h3 id="leaderModalName" class="font-serif text-2xl sm:text-3xl font-bold text-ivoryCrisp"></h3>
+            <p id="leaderModalSummary" class="text-sm text-ivoryCrisp/85 leading-relaxed"></p>
+            <div id="leaderModalPoints" class="space-y-3 pt-2 border-t border-white/10 text-xs sm:text-sm text-ivoryCrisp/80"></div>
+            <div class="pt-2 flex flex-wrap gap-3">
+                <button type="button" onclick="closeLeaderModal(); openModal('FUNDING');" class="px-5 py-2.5 rounded-xl bg-champagneGold text-plumNight text-xs font-extrabold uppercase tracking-wider cursor-pointer">
+                    Engage With YWFEI
+                </button>
+                <button type="button" onclick="closeLeaderModal()" class="px-4 py-2.5 rounded-xl bg-white/10 text-xs font-semibold text-ivoryCrisp cursor-pointer">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- MULTI-MODE / MULTI-STEP APPLICATION, PARTNERSHIP & FUNDING MODAL      -->
+    <!-- ===================================================================== -->
+    <div id="intakeModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4" onclick="if(event.target===this) closeModal()">
+        <div class="modal-reveal glow-modal-shell rounded-[2.25rem] max-w-2xl w-full p-5 sm:p-8 space-y-6 relative max-h-[92dvh] overflow-y-auto">
+            <!-- Luminous Top Accent Line -->
+            <div class="h-1 w-28 rounded-full bg-gradient-to-r from-coralBloom via-champagneLight to-orchidGlow shadow-[0_0_16px_rgba(229,195,132,0.75)]"></div>
+
+            <!-- Modal Header -->
+            <div class="flex items-start justify-between gap-4 pb-5 border-b border-white/10">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                        <span class="w-2 h-2 rounded-full bg-champagneLight shadow-[0_0_10px_#E5C384]"></span>
+                        <span>YWFEI Executive Intake</span>
+                    </div>
+                    <h3 id="modalHeading" class="font-serif text-2xl sm:text-3xl font-bold text-ivoryCrisp mt-1.5 drop-shadow-[0_2px_16px_rgba(168,85,247,0.35)]">
+                        Institutional &amp; Philanthropic Funding
+                    </h3>
+                    <p id="modalSubtitle" class="text-xs sm:text-sm text-ivoryCrisp/70 mt-1">
+                        Direct dossier routing to our Abuja secretariat and program governance desk.
+                    </p>
+                </div>
+                <button type="button" onclick="closeModal()" aria-label="Close Modal" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 flex items-center justify-center text-ivoryCrisp shrink-0 transition-all hover:shadow-[0_0_18px_rgba(244,114,182,0.4)] cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- 4 Mode Tabs -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="modeTabs">
+                <button type="button" data-mode="FUNDING" onclick="switchModalMode('FUNDING')" class="mode-tab-btn px-3 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-champagneGold via-champagneLight to-champagneGold text-plumNight glow-cta-primary transition-all cursor-pointer">
+                    Funding / Grant
+                </button>
+                <button type="button" data-mode="FELLOWSHIP" onclick="switchModalMode('FELLOWSHIP')" class="mode-tab-btn px-3 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/[0.04] border border-white/10 text-ivoryCrisp/80 hover:border-lilacMist/50 hover:shadow-[0_0_16px_-4px_rgba(168,85,247,0.45)] transition-all cursor-pointer">
+                    Fellowship
+                </button>
+                <button type="button" data-mode="MENTORSHIP" onclick="switchModalMode('MENTORSHIP')" class="mode-tab-btn px-3 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/[0.04] border border-white/10 text-ivoryCrisp/80 hover:border-lilacMist/50 hover:shadow-[0_0_16px_-4px_rgba(168,85,247,0.45)] transition-all cursor-pointer">
+                    Mentorship
+                </button>
+                <button type="button" data-mode="PARTNERSHIP" onclick="switchModalMode('PARTNERSHIP')" class="mode-tab-btn px-3 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/[0.04] border border-white/10 text-ivoryCrisp/80 hover:border-lilacMist/50 hover:shadow-[0_0_16px_-4px_rgba(168,85,247,0.45)] transition-all cursor-pointer">
+                    Partnership
+                </button>
+            </div>
+
+            <!-- Glowing 2-Step Progress Indicator -->
+            <div class="p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 space-y-2.5">
+                <div class="flex items-center justify-between gap-2 text-xs font-semibold">
+                    <span id="step1Badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-champagneGold text-plumNight font-bold shadow-[0_0_18px_rgba(229,195,132,0.5)]">
+                        <i class="fa-solid fa-user-check text-[10px]"></i>
+                        <span>01 • Applicant &amp; State</span>
+                    </span>
+                    <span id="step2Badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-ivoryCrisp/65">
+                        <i class="fa-solid fa-sparkles text-[10px]"></i>
+                        <span>02 • Track &amp; Dossier</span>
+                    </span>
+                </div>
+                <div class="h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                    <div id="modalProgressBar" class="h-full w-1/2 rounded-full bg-gradient-to-r from-orchidGlow via-champagneLight to-emeraldMint shadow-[0_0_14px_rgba(229,195,132,0.7)] transition-all duration-300"></div>
+                </div>
+            </div>
+
+            <!-- Validation / Error Banner -->
+            <div id="formErrorBanner" class="hidden p-3.5 rounded-2xl bg-coralBloom/15 border border-coralBloom/50 text-xs font-semibold text-ivoryCrisp shadow-[0_0_20px_-6px_rgba(244,114,182,0.55)]"></div>
+
+            <!-- Intake Form -->
+            <form id="ywfeiIntakeForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                <input type="hidden" id="submissionMode" value="FUNDING" />
+
+                <!-- Step 1 Fields -->
+                <div id="step1Panel" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-champagneLight/90 mb-1.5">
+                                Full Name *
+                            </label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                required
+                                placeholder="e.g., Amina Yusuf"
+                                class="glow-input w-full px-4 py-3 rounded-xl text-sm text-ivoryCrisp placeholder:text-ivoryCrisp/35"
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-champagneLight/90 mb-1.5">
+                                Organization / Enterprise / Title
+                            </label>
+                            <input
+                                type="text"
+                                id="orgRole"
+                                placeholder="e.g., Managing Partner or Founder"
+                                class="glow-input w-full px-4 py-3 rounded-xl text-sm text-ivoryCrisp placeholder:text-ivoryCrisp/35"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-champagneLight/90 mb-1.5">
+                                Email Address *
+                            </label>
+                            <input
+                                type="email"
+                                id="emailAddress"
+                                required
+                                placeholder="name@organization.ng"
+                                class="glow-input w-full px-4 py-3 rounded-xl text-sm text-ivoryCrisp placeholder:text-ivoryCrisp/35"
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-champagneLight/90 mb-1.5">
+                                Nigerian Phone Number *
+                            </label>
+                            <input
+                                type="tel"
+                                id="phoneNumber"
+                                required
+                                placeholder="0803 000 0000"
+                                class="glow-input w-full px-4 py-3 rounded-xl text-sm text-ivoryCrisp placeholder:text-ivoryCrisp/35"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase tracking-wider text-champagneLight/90 mb-1.5">
+                            State or FCT (Nigeria) *
+                        </label>
+                        <select
+                            id="stateSelect"
+                            required
+                            class="glow-input w-full px-4 py-3 rounded-xl text-sm text-ivoryCrisp"
+                        ></select>
+                    </div>
+
+                    <div class="pt-2 flex justify-end">
+                        <button type="button" onclick="goToStep2()" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-champagneGold via-champagneLight to-champagneGold text-plumNight text-xs font-extrabold uppercase tracking-wider glow-cta-primary hover:brightness-105 transition-all cursor-pointer">
+                            Continue to Step 2 <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 Fields -->
+                <div id="step2Panel" class="hidden space-y-4">
+                    <div>
+                        <label id="dynamicOptionLabel" class="block text-[11px] font-bold uppercase tracking-wider text-champagneLight/90 mb-2">
+                            Funding Tier / Focus *
+                        </label>
+
+                        <!-- Interactive Glowing Option Cards -->
+                        <div id="dynamicOptionCards" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-3"></div>
+
+                        <select
+                            id="dynamicOptionSelect"
+                            required
+                            onchange="syncOptionCardSelection(this.value)"
+                            class="glow-input w-full px-4 py-3 rounded-xl text-sm text-ivoryCrisp"
+                        ></select>
+                    </div>
+
+                    <!-- Engagement Horizon / Priority Pills -->
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase tracking-wider text-lilacMist mb-2">
+                            Engagement Horizon
+                        </label>
+                        <div id="horizonChips" class="flex flex-wrap gap-2">
+                            <button type="button" data-horizon="Immediate (Q2 2026)" onclick="selectHorizon('Immediate (Q2 2026)', this)" class="horizon-chip px-3.5 py-1.5 rounded-full text-xs font-bold bg-orchidGlow/25 border border-lilacMist/60 text-ivoryCrisp shadow-[0_0_16px_-4px_rgba(168,85,247,0.55)] cursor-pointer">
+                                Immediate (Q2 2026)
+                            </button>
+                            <button type="button" data-horizon="2026–2027 Cohort Cycle" onclick="selectHorizon('2026–2027 Cohort Cycle', this)" class="horizon-chip px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white/[0.04] border border-white/15 text-ivoryCrisp/75 hover:border-lilacMist/40 cursor-pointer">
+                                2026–2027 Cohort Cycle
+                            </button>
+                            <button type="button" data-horizon="Multi-Year Endowment" onclick="selectHorizon('Multi-Year Endowment', this)" class="horizon-chip px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white/[0.04] border border-white/15 text-ivoryCrisp/75 hover:border-lilacMist/40 cursor-pointer">
+                                Multi-Year Endowment
+                            </button>
+                        </div>
+                        <input type="hidden" id="engagementHorizon" value="Immediate (Q2 2026)" />
+                    </div>
+
+                    <div>
+                        <label class="block text-[11px] font-bold uppercase tracking-wider text-champagneLight/90 mb-1.5">
+                            Brief / Proposal / Motivation *
+                        </label>
+                        <textarea
+                            id="briefMessage"
+                            rows="4"
+                            required
+                            placeholder="Share your objectives, target states or zones, grant scope, or fellowship background..."
+                            class="glow-input w-full px-4 py-3 rounded-xl text-sm text-ivoryCrisp placeholder:text-ivoryCrisp/35"
+                        ></textarea>
+                    </div>
+
+                    <div class="pt-2 flex items-center justify-between gap-3">
+                        <button type="button" onclick="goToStep1()" class="px-4 py-3 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/15 text-xs font-bold text-ivoryCrisp transition-all cursor-pointer">
+                            <i class="fa-solid fa-arrow-left mr-1.5"></i> Back
+                        </button>
+                        <button type="submit" id="submitBtn" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-champagneGold via-champagneLight to-champagneGold text-plumNight text-xs font-extrabold uppercase tracking-wider glow-cta-primary hover:brightness-105 transition-all inline-flex items-center gap-2 cursor-pointer">
+                            <span id="submitBtnText">Submit to YWFEI</span>
+                            <i id="submitSpinner" class="fa-solid fa-circle-notch fa-spin hidden"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Confirmation Receipt State -->
+            <div id="formSuccessPanel" class="hidden text-center py-6 space-y-4">
+                <div class="w-16 h-16 rounded-2xl bg-emeraldMint/15 border border-emeraldMint/50 flex items-center justify-center mx-auto text-emeraldMint text-2xl shadow-[0_0_28px_rgba(16,185,129,0.4)]">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-xs font-bold uppercase tracking-[0.22em] text-champagneGold">
+                        Submission Logged
+                    </div>
+                    <h4 class="font-serif text-2xl sm:text-3xl font-bold text-ivoryCrisp">
+                        Thank You for Engaging With YWFEI
+                    </h4>
+                    <p class="text-sm text-ivoryCrisp/75 max-w-md mx-auto">
+                        Your dossier has been recorded for review by our Abuja secretariat and program governance desk.
+                    </p>
+                </div>
+                <div class="inline-block px-4 py-2 rounded-xl bg-white/[0.05] border border-champagneGold/40 text-xs font-mono text-champagneLight shadow-[0_0_20px_-6px_rgba(212,168,87,0.45)]">
+                    Reference ID: <span id="receiptRefCode" class="font-bold">YWFEI-00000</span>
+                </div>
+                <div class="pt-3">
+                    <button type="button" onclick="resetAndCloseModal()" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/15 border border-white/15 text-xs font-bold uppercase tracking-wider text-ivoryCrisp cursor-pointer">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- APPLICATION LOGIC & SILENT BACKGROUND DISPATCH                        -->
+    <!-- ===================================================================== -->
+    <script>
+        // =====================================================================
+        // NIGERIAN STATES & FCT POPULATION
+        // =====================================================================
+        const NIGERIAN_STATES = [
+            'Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa',
+            'Benue', 'Borno', 'Cross River', 'Delta', 'Ebonyi', 'Edo',
+            'Ekiti', 'Enugu', 'FCT (Abuja)', 'Gombe', 'Imo', 'Jigawa',
+            'Kaduna', 'Kano', 'Katsina', 'Kebbi', 'Kogi', 'Kwara',
+            'Lagos', 'Nasarawa', 'Niger', 'Ogun', 'Ondo', 'Osun',
+            'Oyo', 'Plateau', 'Rivers', 'Sokoto', 'Taraba', 'Yobe', 'Zamfara'
+        ];
+
+        const stateSelect = document.getElementById('stateSelect');
+        NIGERIAN_STATES.forEach(st => {
+            const opt = document.createElement('option');
+            opt.value = st;
+            opt.textContent = st;
+            if (st === 'FCT (Abuja)') opt.selected = true;
+            stateSelect.appendChild(opt);
+        });
+
+        // =====================================================================
+        // FLOATING HEADLINE-STYLE PARTNERS TICKER & MOU DRAWER
+        // =====================================================================
+        const NIGERIAN_PARTNERS = [
+            {
+                key: 'BOI',
+                name: 'Bank of Industry (BOI)',
+                shortLabel: 'BOI NIGERIA',
+                headline: 'Development Finance & Women MSME Credit Bridges',
+                category: 'Development Finance Institution',
+                badgeColor: '#34D399',
+                iconClass: 'fa-building-columns',
+                focus: 'Structured industrial credit facilities, enterprise de-risking, and value-chain financing for formalizing women-owned Nigerian businesses.',
+                mou: 'Joint referral pathways for YWFEI grant graduates scaling into industrial equipment loans, agro-processing lines, and export-ready MSMEs.',
+                impact: 'Supports transition from micro-grant readiness to institutional enterprise credit across high-growth Nigerian sectors.'
+            },
+            {
+                key: 'SMEDAN',
+                name: 'SMEDAN',
+                shortLabel: 'SMEDAN',
+                headline: 'MSME Formalization, Clusters & Capacity Clinics',
+                category: 'Federal Enterprise Agency',
+                badgeColor: '#E5C384',
+                iconClass: 'fa-store',
+                focus: 'Micro, small, and medium enterprise registration, cooperative cluster development, business advisory, and workspace readiness.',
+                mou: 'Co-hosted state enterprise clinics, business registration drives, and cooperative cluster onboarding across geopolitical zones.',
+                impact: 'Helps young women founders formalize operations, access cluster infrastructure, and meet procurement standards.'
+            },
+            {
+                key: 'NITDA',
+                name: 'NITDA',
+                shortLabel: 'NITDA',
+                headline: 'Digital Literacy, Tech Hubs & Future-Ready Skills',
+                category: 'National Digital Agency',
+                badgeColor: '#C792EA',
+                iconClass: 'fa-microchip',
+                focus: 'Digital economy inclusion, foundational and intermediate tech skills, innovation hubs, and digital workplace readiness.',
+                mou: 'Curriculum alignment and digital skills pathways equipping young Nigerian women for remote work, e-commerce, and tech-enabled ventures.',
+                impact: 'Expands digital fluency and employability among young women outside major metropolitan tech corridors.'
+            },
+            {
+                key: 'ACCESS',
+                name: 'Access Bank (W Initiative)',
+                shortLabel: 'ACCESS BANK • W',
+                headline: 'Women Banking, Advisory & Market Linkages',
+                category: 'Commercial Banking & Women Enterprise',
+                badgeColor: '#F47296',
+                iconClass: 'fa-vault',
+                focus: 'Women-focused financial inclusion, business advisory clinics, account onboarding, and commercial market access.',
+                mou: 'Financial literacy workshops, banking access for grant recipients, and mentorship connections for emerging women entrepreneurs.',
+                impact: 'Builds trusted banking habits, working capital discipline, and commercial network visibility.'
+            },
+            {
+                key: 'DANGOTE',
+                name: 'Aliko Dangote Foundation',
+                shortLabel: 'DANGOTE FOUNDATION',
+                headline: 'Large-Scale Philanthropy, Nutrition & Economic Lift',
+                category: 'Pan-African Philanthropy',
+                badgeColor: '#E5C384',
+                iconClass: 'fa-seedling',
+                focus: 'High-impact social investment across economic empowerment, nutrition, health, and community resilience across Nigeria.',
+                mou: 'Alignment on grassroots economic empowerment, women’s livelihoods, and multi-state community outreach.',
+                impact: 'Scales household resilience and income generation for vulnerable young women and families.'
+            },
+            {
+                key: 'LSETF',
+                name: 'LSETF',
+                shortLabel: 'LSETF',
+                headline: 'Enterprise Grants, Employability & Lagos Ecosystem',
+                category: 'State Employment & Enterprise Trust',
+                badgeColor: '#38BDF8',
+                iconClass: 'fa-briefcase',
+                focus: 'Job creation, vocational & digital employability programs, and micro-enterprise funding within Lagos State.',
+                mou: 'Ecosystem synergy for Lagos-based cohorts, alumni placement, and enterprise growth milestones.',
+                impact: 'Connects trained young women with job readiness, vocational placements, and micro-enterprise support.'
+            },
+            {
+                key: 'STERLING',
+                name: 'Sterling Bank',
+                shortLabel: 'STERLING BANK',
+                headline: 'Sector Financing in Agribusiness, Health & Enterprise',
+                category: 'Commercial Banking Partner',
+                badgeColor: '#34D399',
+                iconClass: 'fa-hand-holding-dollar',
+                focus: 'Real-sector financing across HEART (Health, Education, Agriculture, Renewable Energy, Transportation) and SME banking.',
+                mou: 'Collaborative financial coaching and agribusiness/enterprise value-chain conversations for YWFEI fellows.',
+                impact: 'Strengthens real-sector business planning and sustainable cashflow management.'
+            },
+            {
+                key: 'FLUTTERWAVE',
+                name: 'Flutterwave',
+                shortLabel: 'FLUTTERWAVE',
+                headline: 'Digital Payments, Commerce Rails & Women Founders',
+                category: 'Payments & Commerce Infrastructure',
+                badgeColor: '#C792EA',
+                iconClass: 'fa-credit-card',
+                focus: 'Modern payment acceptance, digital storefronts, and seamless collections for African merchants and growing enterprises.',
+                mou: 'Digital payments onboarding and online commerce readiness for women-led brands scaling into digital sales.',
+                impact: 'Enables young women entrepreneurs to accept digital payments smoothly and reach wider customers.'
+            }
+        ];
+
+        let partnerTickerPaused = false;
+        let activePartnerKey = NIGERIAN_PARTNERS[0].key;
+
+        function buildPartnerHeadlineItem(partner) {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.onclick = () => openPartnerDrawer(partner.key);
+            btn.className = 'group inline-flex items-center gap-3 px-4 py-1.5 mx-1.5 rounded-full bg-white/[0.04] hover:bg-plumVelvet/90 border border-white/10 hover:border-champagneGold/45 transition-all cursor-pointer shrink-0';
+            btn.innerHTML = `
+                <span class="w-7 h-7 rounded-full bg-plumVelvet border border-white/15 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform" style="color:${partner.badgeColor};">
+                    <i class="fa-solid ${partner.iconClass} text-xs"></i>
+                </span>
+                <span class="font-serif text-sm sm:text-base font-bold tracking-wide text-ivoryCrisp group-hover:text-champagneLight transition-colors">
+                    ${partner.shortLabel}
+                </span>
+                <span class="hidden sm:inline text-xs text-ivoryCrisp/65 group-hover:text-ivoryCrisp/90 transition-colors">
+                    — ${partner.headline}
+                </span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-champagneGold/85 group-hover:text-champagneLight">
+                    MOU <i class="fa-solid fa-arrow-up-right-from-square text-[9px] ml-0.5"></i>
+                </span>
+            `;
+            return btn;
+        }
+
+        function initPartnerHeadlineTicker() {
+            const track = document.getElementById('partnerHeadlineTrack');
+            if (!track) return;
+            track.innerHTML = '';
+            // Duplicate sequence for seamless continuous headline loop
+            [...NIGERIAN_PARTNERS, ...NIGERIAN_PARTNERS].forEach(partner => {
+                track.appendChild(buildPartnerHeadlineItem(partner));
+            });
+        }
+
+        function togglePartnerTicker() {
+            const shell = document.getElementById('partnerHeadlineBar');
+            const icon = document.getElementById('partnerTickerIcon');
+            partnerTickerPaused = !partnerTickerPaused;
+            if (shell) {
+                shell.classList.toggle('is-paused', partnerTickerPaused);
+            }
+            if (icon) {
+                icon.className = partnerTickerPaused ? 'fa-solid fa-play' : 'fa-solid fa-pause';
+            }
+        }
+
+        function openPartnerDrawer(key) {
+            const partner = NIGERIAN_PARTNERS.find(p => p.key === key) || NIGERIAN_PARTNERS[0];
+            activePartnerKey = partner.key;
+
+            document.getElementById('partnerCategoryBadge').textContent = partner.category;
+            document.getElementById('partnerDrawerName').textContent = `${partner.name} — ${partner.headline}`;
+            document.getElementById('partnerDrawerFocus').textContent = partner.focus;
+            document.getElementById('partnerDrawerMou').textContent = partner.mou;
+            document.getElementById('partnerDrawerImpact').textContent = partner.impact;
+
+            const actionBtn = document.getElementById('partnerDrawerActionBtn');
+            actionBtn.onclick = () => {
+                closePartnerDrawer();
+                openModal('PARTNERSHIP', `${partner.name} Alignment`);
+            };
+
+            const pillsContainer = document.getElementById('partnerDrawerPills');
+            pillsContainer.innerHTML = '';
+            NIGERIAN_PARTNERS.forEach(item => {
+                const pill = document.createElement('button');
+                pill.type = 'button';
+                pill.onclick = () => openPartnerDrawer(item.key);
+                const isSelected = item.key === partner.key;
+                pill.className = isSelected
+                    ? 'px-3 py-1 rounded-full text-[11px] font-bold bg-champagneGold text-plumNight cursor-pointer'
+                    : 'px-3 py-1 rounded-full text-[11px] font-semibold bg-white/5 hover:bg-white/10 border border-white/10 text-ivoryCrisp/75 cursor-pointer';
+                pill.textContent = item.shortLabel;
+                pillsContainer.appendChild(pill);
+            });
+
+            document.getElementById('partnerDrawerModal').classList.remove('hidden');
+        }
+
+        function closePartnerDrawer() {
+            document.getElementById('partnerDrawerModal').classList.add('hidden');
+        }
+
+        initPartnerHeadlineTicker();
+
+        // =====================================================================
+        // HERO CROSSFADE SLIDESHOW CONTROLLER
+        // =====================================================================
+        let currentSlideIdx = 0;
+        let slideTimer = null;
+        let isPlaying = true;
+        const heroSlides = Array.from(document.querySelectorAll('#heroSlideshow .hero-slide'));
+        const heroDots = Array.from(document.querySelectorAll('#heroDots .hero-dot'));
+
+        function goToHeroSlide(index) {
+            currentSlideIdx = (index + heroSlides.length) % heroSlides.length;
+            heroSlides.forEach((slide, i) => slide.classList.toggle('is-active', i === currentSlideIdx));
+            heroDots.forEach((dot, i) => {
+                if (i === currentSlideIdx) {
+                    dot.className = 'hero-dot w-7 h-2 rounded-full bg-champagneGold transition-all cursor-pointer';
+                } else {
+                    dot.className = 'hero-dot w-2.5 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-all cursor-pointer';
+                }
+            });
+        }
+
+        function startSlideTimer() {
+            clearInterval(slideTimer);
+            if (isPlaying) {
+                slideTimer = setInterval(() => goToHeroSlide(currentSlideIdx + 1), 5500);
+            }
+        }
+
+        function toggleHeroSlideshow() {
+            isPlaying = !isPlaying;
+            const icon = document.getElementById('heroPlayPauseIcon');
+            const label = document.getElementById('heroPlayPauseLabel');
+            if (isPlaying) {
+                icon.className = 'fa-solid fa-pause text-[10px]';
+                label.textContent = 'Pause';
+                startSlideTimer();
+            } else {
+                icon.className = 'fa-solid fa-play text-[10px]';
+                label.textContent = 'Play';
+                clearInterval(slideTimer);
+            }
+        }
+
+        startSlideTimer();
+
+        // =====================================================================
+        // LEADERSHIP MANDATE & GOVERNANCE MODAL
+        // =====================================================================
+        const LEADER_PROFILES = {
+            founder: {
+                role: 'Founder & Executive Director',
+                name: 'Princess Atikat Ajannah',
+                summary: 'Visionary founder driving YWFEI’s mission to move young Nigerian women from aspiration to economic self-reliance, institutional leadership, and dignity.',
+                points: [
+                    '<strong>Program & Cohort Architecture:</strong> Oversees curriculum standards, grant vetting committees, and direct community outreach across Nigeria.',
+                    '<strong>Abuja Headquarters & Zonal Mobilization:</strong> Coordinates national stakeholders, state chapters, and beneficiary safeguarding.',
+                    '<strong>Direct Impact Focus:</strong> Prioritizes young women building tangible enterprises, digital skills, and community leadership.'
+                ]
+            },
+            patron: {
+                role: 'Grand Patron',
+                name: 'Barr. Seyi Tinubu',
+                summary: 'Provides high-level patronage, strategic mentorship bridges, and youth-focused enterprise advocacy advancing young Nigerians into productive leadership.',
+                points: [
+                    '<strong>Youth & Enterprise Patronage:</strong> Champions bold youth-led initiative, private-sector linkages, and national visibility for emerging women leaders.',
+                    '<strong>Ecosystem Alignment:</strong> Encourages constructive collaboration between young founders, mentors, and institutional partners.',
+                    '<strong>Generational Ambition:</strong> Supports long-term pathways that turn talent and resilience into measurable economic participation.'
+                ]
+            },
+            chairman: {
+                role: 'Chairman, Board of Trustees',
+                name: 'Alhaji Aliyu Ajannah',
+                summary: 'Leads the Board of Trustees in safeguarding fiduciary integrity, grant governance, regulatory compliance, and multi-year institutional sustainability.',
+                points: [
+                    '<strong>Fiduciary & Grant Oversight:</strong> Ensures disciplined tranche disbursements, transparent accounting, and donor accountability.',
+                    '<strong>Trusteeship Governance:</strong> Guides board deliberations, endowment stewardship, and risk management across programs.',
+                    '<strong>Institutional Credibility:</strong> Anchors YWFEI’s readiness for developmental, corporate, and philanthropic co-investment.'
+                ]
+            }
+        };
+
+        function openLeaderModal(key) {
+            const profile = LEADER_PROFILES[key];
+            if (!profile) return;
+            document.getElementById('leaderModalRole').textContent = profile.role;
+            document.getElementById('leaderModalName').textContent = profile.name;
+            document.getElementById('leaderModalSummary').textContent = profile.summary;
+            document.getElementById('leaderModalPoints').innerHTML = profile.points
+                .map(p => `<div class="flex items-start gap-2.5"><span class="text-champagneGold mt-0.5"><i class="fa-solid fa-circle-check text-xs"></i></span><span>${p}</span></div>`)
+                .join('');
+            document.getElementById('leaderModal').classList.remove('hidden');
+        }
+
+        function closeLeaderModal() {
+            document.getElementById('leaderModal').classList.add('hidden');
+        }
+
+        // =====================================================================
+        // PILLAR FILTERING & EXPANDABLE DETAILS
+        // =====================================================================
+        function filterPillars(category, btnEl) {
+            document.querySelectorAll('.pillar-filter-btn').forEach(btn => {
+                btn.className = 'pillar-filter-btn px-4 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer';
+            });
+            if (btnEl) {
+                btnEl.className = 'pillar-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-champagneGold text-plumNight transition-all cursor-pointer';
+            }
+
+            document.querySelectorAll('#pillars .pillar-card').forEach(card => {
+                const match = category === 'ALL' || card.getAttribute('data-category') === category;
+                card.classList.toggle('hidden', !match);
+            });
+        }
+
+        function togglePillarDetail(detailId, btnEl) {
+            const panel = document.getElementById(detailId);
+            if (!panel) return;
+            const isHidden = panel.classList.contains('hidden');
+            panel.classList.toggle('hidden', !isHidden);
+            const span = btnEl.querySelector('span');
+            if (span) {
+                span.textContent = isHidden ? 'Hide Details' : 'Inspect Details';
+            }
+        }
+
+        // =====================================================================
+        // 6-GEOPOLITICAL-ZONE NATIONAL FOOTPRINT EXPLORER
+        // =====================================================================
+        const ZONE_DATA = {
+            NC: {
+                eyebrow: 'North-Central Zone • Policy, Agribusiness & Youth Hubs',
+                title: 'Abuja (FCT), Kwara, Niger, Benue, Plateau, Kogi & Nasarawa',
+                summary: 'Anchored by YWFEI’s secretariat in Abuja, North-Central coordinates federal/institutional partnerships alongside agribusiness processing, digital skills, and leadership clinics across middle-belt communities.',
+                hubs: 'Abuja • Ilorin • Jos',
+                reached: '3,450+',
+                grants: '₦260M',
+                track: 'Civic & Agro-Value'
+            },
+            SW: {
+                eyebrow: 'South-West Zone • Enterprise, Commerce & Digital Scale',
+                title: 'Lagos, Oyo, Ogun, Osun, Ondo & Ekiti',
+                summary: 'Connects young women founders with high-velocity commercial markets, e-commerce and digital readiness, creative/fashion manufacturing, and mentor networks across the South-West.',
+                hubs: 'Lagos • Ibadan • Abeokuta',
+                reached: '4,620+',
+                grants: '₦390M',
+                track: 'Commerce & Digital'
+            },
+            NW: {
+                eyebrow: 'North-West Zone • Agro-Processing & Cooperative Livelihoods',
+                title: 'Kano, Kaduna, Katsina, Jigawa, Sokoto, Kebbi & Zamfara',
+                summary: 'Focuses on women’s agricultural cooperatives, grain and produce processing, household livelihood resilience, and culturally grounded skills training across seven states.',
+                hubs: 'Kano • Kaduna • Sokoto',
+                reached: '3,890+',
+                grants: '₦295M',
+                track: 'Agro-Cooperatives'
+            },
+            SS: {
+                eyebrow: 'South-South Zone • Blue Economy, Skills & Enterprise',
+                title: 'Rivers, Delta, Edo, Akwa Ibom, Cross River & Bayelsa',
+                summary: 'Advances enterprise grants, vocational and digital training, environmental/community leadership, and young women’s economic independence across the Niger Delta.',
+                hubs: 'Port Harcourt • Benin • Uyo',
+                reached: '2,540+',
+                grants: '₦195M',
+                track: 'Enterprise & Skills'
+            },
+            SE: {
+                eyebrow: 'South-East Zone • Trade, Craftsmanship & Manufacturing',
+                title: 'Enugu, Anambra, Imo, Abia & Ebonyi',
+                summary: 'Builds on strong commercial and artisanal traditions by equipping young women with modern trade systems, digital storefronts, working-capital discipline, and leadership mentorship.',
+                hubs: 'Enugu • Onitsha • Aba',
+                reached: '2,180+',
+                grants: '₦165M',
+                track: 'Trade & Craft Scale'
+            },
+            NE: {
+                eyebrow: 'North-East Zone • Resilience, Recovery & Livelihood Dignity',
+                title: 'Borno, Adamawa, Yobe, Bauchi, Gombe & Taraba',
+                summary: 'Delivers high-dignity livelihood recovery, vocational skills, legal/health protection, and seed enterprise support for young women rebuilding economic stability.',
+                hubs: 'Yola • Bauchi • Gombe',
+                reached: '1,720+',
+                grants: '₦115M',
+                track: 'Resilience & Livelihoods'
+            }
+        };
+
+        function selectZone(zoneCode, btnEl) {
+            const z = ZONE_DATA[zoneCode];
+            if (!z) return;
+            document.querySelectorAll('#zoneSelector .zone-btn').forEach(btn => {
+                btn.className = 'zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/5 border border-white/10 text-ivoryCrisp/80 hover:border-champagneGold/40 transition-all cursor-pointer';
+            });
+            if (btnEl) {
+                btnEl.className = 'zone-btn shrink-0 px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-champagneGold text-plumNight transition-all cursor-pointer';
+            }
+            document.getElementById('zoneEyebrow').textContent = z.eyebrow;
+            document.getElementById('zoneTitle').textContent = z.title;
+            document.getElementById('zoneSummary').textContent = z.summary;
+            document.getElementById('zoneHubs').textContent = z.hubs;
+            document.getElementById('zoneReached').textContent = z.reached;
+            document.getElementById('zoneGrants').textContent = z.grants;
+            document.getElementById('zoneTrack').textContent = z.track;
+        }
+
+        // =====================================================================
+        // BENEFICIARY STORIES SWITCHER
+        // =====================================================================
+        const STORIES = [
+            {
+                name: 'Zainab Abdullahi',
+                meta: 'Agro-Processing Cooperative Lead • Kano (North-West)',
+                avatar: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400',
+                quote: '“With YWFEI equipment co-financing and bookkeeping mentorship, our women’s sesame and hibiscus processing unit expanded from seasonal home batches to year-round regional supply contracts employing 14 young women.”'
+            },
+            {
+                name: 'Chidinma Okafor',
+                meta: 'Digital Commerce Founder • Lagos & Enugu (South-West / South-East)',
+                avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+                quote: '“The Digital Commerce cohort helped me structure my packaging, payment rails, and inventory forecasting. Within six months of completing the program, direct online orders doubled my monthly revenue.”'
+            },
+            {
+                name: 'Aisha Danjuma',
+                meta: 'Civic & Community Policy Fellow • Abuja (North-Central)',
+                avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+                quote: '“YWFEI gave me the confidence, policy literacy, and executive network to advocate for young women’s enterprise inclusion in local development forums across the FCT and neighboring states.”'
+            }
+        ];
+
+        let storyIdx = 0;
+
+        function setStory(index) {
+            storyIdx = (index + STORIES.length) % STORIES.length;
+            const s = STORIES[storyIdx];
+            const body = document.getElementById('storyCardBody');
+            body.style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('storyName').textContent = s.name;
+                document.getElementById('storyMeta').textContent = s.meta;
+                document.getElementById('storyQuote').textContent = s.quote;
+                const img = document.getElementById('storyAvatar');
+                img.src = s.avatar;
+                img.alt = s.name;
+                body.style.opacity = '1';
+            }, 180);
+
+            document.querySelectorAll('#storyDots .story-dot').forEach((dot, i) => {
+                if (i === storyIdx) {
+                    dot.className = 'story-dot w-6 h-2 rounded-full bg-champagneGold transition-all cursor-pointer';
+                } else {
+                    dot.className = 'story-dot w-2.5 h-2 rounded-full bg-white/25 transition-all cursor-pointer';
+                }
+            });
+        }
+
+        function nextStory() { setStory(storyIdx + 1); }
+        function prevStory() { setStory(storyIdx - 1); }
+
+        // =====================================================================
+        // MOBILE NAVIGATION DRAWER
+        // =====================================================================
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('mobileMenuIcon');
+            const isOpen = !menu.classList.contains('hidden');
+            menu.classList.toggle('hidden', isOpen);
+            icon.className = isOpen ? 'fa-solid fa-bars text-sm' : 'fa-solid fa-xmark text-sm';
+        }
+
+        function closeMobileMenu() {
+            document.getElementById('mobileMenu').classList.add('hidden');
+            document.getElementById('mobileMenuIcon').className = 'fa-solid fa-bars text-sm';
+        }
+
+        // =====================================================================
+        // MULTI-MODE / MULTI-STEP MODAL & VALIDATION
+        // =====================================================================
+        const MODE_CONFIG = {
+            FUNDING: {
+                heading: 'Institutional & Philanthropic Funding',
+                subtitle: 'Direct capital allocation, cohort sponsorship, and endowment support across Nigeria.',
+                optionLabel: 'Grant / Endowment / Sponsorship Tier *',
+                options: [
+                    'Seed Enterprise Grant Pool (₦10M – ₦50M)',
+                    'Zonal Women’s Hub & Bootcamp Sponsorship',
+                    'Multi-Year Endowment & Trusteeship Contribution',
+                    'Custom Institutional Grant / CSR Allocation'
+                ]
+            },
+            FELLOWSHIP: {
+                heading: 'Fellowship, Cohort & Seed Grant Application',
+                subtitle: 'Apply for structured enterprise capital, digital commerce training, or leadership tracks.',
+                optionLabel: 'Primary Empowerment Track *',
+                options: [
+                    'Enterprise Seed Grant Track',
+                    'Digital Commerce & AI Cohort',
+                    'Civic, Policy & Executive Leadership Track',
+                    'Agribusiness & Cooperative Scale Track'
+                ]
+            },
+            MENTORSHIP: {
+                heading: 'Mentorship & Advisory Participation',
+                subtitle: 'Guide emerging Nigerian women founders, fellows, and cooperative leaders.',
+                optionLabel: 'Mentorship Specialty *',
+                options: [
+                    'Executive & Policy Mentorship',
+                    'Finance, Accounting & Grant Readiness',
+                    'Digital Commerce, Product & Growth',
+                    'Legal, Governance & Compliance Advisory'
+                ]
+            },
+            PARTNERSHIP: {
+                heading: 'Strategic & Institutional Partnership',
+                subtitle: 'Co-deliver state, zonal, or national programs with aligned institutions.',
+                optionLabel: 'Partnership Alignment *',
+                options: [
+                    'Bank of Industry (BOI) Alignment',
+                    'SMEDAN Alignment',
+                    'NITDA Alignment',
+                    'Access Bank (W Initiative) Alignment',
+                    'Aliko Dangote Foundation Alignment',
+                    'LSETF Alignment',
+                    'Sterling Bank Alignment',
+                    'Flutterwave Alignment',
+                    'Legal, Health & Safeguarding Partner',
+                    'State / Zonal Implementation MOU'
+                ]
+            }
+        };
+
+        function syncOptionCardSelection(selectedVal) {
+            document.querySelectorAll('#dynamicOptionCards .glow-tier-card').forEach(card => {
+                card.classList.toggle('is-selected', card.getAttribute('data-option-value') === selectedVal);
+            });
+        }
+
+        function renderOptionCards(optionsList, selectedVal) {
+            const container = document.getElementById('dynamicOptionCards');
+            if (!container) return;
+            container.innerHTML = '';
+
+            const previewOptions = optionsList.slice(0, 4);
+            previewOptions.forEach(optText => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.setAttribute('data-option-value', optText);
+                btn.onclick = () => {
+                    document.getElementById('dynamicOptionSelect').value = optText;
+                    syncOptionCardSelection(optText);
+                };
+                const isActive = optText === selectedVal;
+                btn.className = `glow-tier-card text-left p-3 rounded-xl flex items-center justify-between gap-2 cursor-pointer ${isActive ? 'is-selected' : ''}`;
+                btn.innerHTML = `
+                    <span class="text-xs font-semibold text-ivoryCrisp leading-snug">${optText}</span>
+                    <i class="fa-solid fa-circle-dot text-xs shrink-0 ${isActive ? 'text-champagneLight' : 'text-white/25'}"></i>
+                `;
+                container.appendChild(btn);
+            });
+        }
+
+        function selectHorizon(horizonLabel, btnEl) {
+            document.getElementById('engagementHorizon').value = horizonLabel;
+            document.querySelectorAll('#horizonChips .horizon-chip').forEach(chip => {
+                chip.className = 'horizon-chip px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white/[0.04] border border-white/15 text-ivoryCrisp/75 hover:border-lilacMist/40 cursor-pointer';
+            });
+            if (btnEl) {
+                btnEl.className = 'horizon-chip px-3.5 py-1.5 rounded-full text-xs font-bold bg-orchidGlow/25 border border-lilacMist/60 text-ivoryCrisp shadow-[0_0_16px_-4px_rgba(168,85,247,0.55)] cursor-pointer';
+            }
+        }
+
+        function populateModeOptions(mode, preselectOption = '') {
+            const cfg = MODE_CONFIG[mode] || MODE_CONFIG.FUNDING;
+            document.getElementById('modalHeading').textContent = cfg.heading;
+            const subEl = document.getElementById('modalSubtitle');
+            if (subEl) subEl.textContent = cfg.subtitle;
+            document.getElementById('dynamicOptionLabel').textContent = cfg.optionLabel;
+
+            const selectEl = document.getElementById('dynamicOptionSelect');
+            selectEl.innerHTML = '';
+
+            const allOptions = [...cfg.options];
+            if (preselectOption && !allOptions.includes(preselectOption)) {
+                allOptions.unshift(preselectOption);
+            }
+
+            allOptions.forEach(optText => {
+                const opt = document.createElement('option');
+                opt.value = optText;
+                opt.textContent = optText;
+                if (preselectOption && optText === preselectOption) {
+                    opt.selected = true;
+                }
+                selectEl.appendChild(opt);
+            });
+
+            const activeVal = selectEl.value || allOptions[0] || '';
+            renderOptionCards(allOptions, activeVal);
+        }
+
+        function switchModalMode(mode, preselectOption = '') {
+            document.getElementById('submissionMode').value = mode;
+            document.querySelectorAll('#modeTabs .mode-tab-btn').forEach(btn => {
+                const active = btn.getAttribute('data-mode') === mode;
+                btn.className = active
+                    ? 'mode-tab-btn px-3 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-champagneGold via-champagneLight to-champagneGold text-plumNight glow-cta-primary transition-all cursor-pointer'
+                    : 'mode-tab-btn px-3 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider bg-white/[0.04] border border-white/10 text-ivoryCrisp/80 hover:border-lilacMist/50 hover:shadow-[0_0_16px_-4px_rgba(168,85,247,0.45)] transition-all cursor-pointer';
+            });
+            populateModeOptions(mode, preselectOption);
+        }
+
+        function syncModalStepUI(stepNum) {
+            const step1Panel = document.getElementById('step1Panel');
+            const step2Panel = document.getElementById('step2Panel');
+            const badge1 = document.getElementById('step1Badge');
+            const badge2 = document.getElementById('step2Badge');
+            const progressBar = document.getElementById('modalProgressBar');
+            document.getElementById('formErrorBanner').classList.add('hidden');
+
+            if (stepNum === 1) {
+                step1Panel.classList.remove('hidden');
+                step2Panel.classList.add('hidden');
+                badge1.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-champagneGold text-plumNight font-bold shadow-[0_0_18px_rgba(229,195,132,0.5)]';
+                badge2.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-ivoryCrisp/65';
+                if (progressBar) progressBar.style.width = '50%';
+            } else {
+                step1Panel.classList.add('hidden');
+                step2Panel.classList.remove('hidden');
+                badge1.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emeraldMint/20 text-emeraldMint font-bold';
+                badge2.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-champagneGold text-plumNight font-bold shadow-[0_0_18px_rgba(229,195,132,0.5)]';
+                if (progressBar) progressBar.style.width = '100%';
+            }
+        }
+
+        function isValidNigerianPhone(rawPhone) {
+            const digits = (rawPhone || '').replace(/\D/g, '');
+            if (digits.startsWith('234') && digits.length === 13) return true;
+            if (digits.startsWith('0') && digits.length === 11) return true;
+            return false;
+        }
+
+        function goToStep1() {
+            syncModalStepUI(1);
+        }
+
+        function goToStep2() {
+            const fullName = document.getElementById('fullName').value.trim();
+            const emailAddress = document.getElementById('emailAddress').value.trim();
+            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+            const errorBox = document.getElementById('formErrorBanner');
+
+            if (!fullName || !emailAddress || !phoneNumber) {
+                errorBox.textContent = 'Please complete your name, email address, and Nigerian phone number.';
+                errorBox.classList.remove('hidden');
+                return;
+            }
+
+            if (!isValidNigerianPhone(phoneNumber)) {
+                errorBox.textContent = 'Please enter a valid Nigerian phone number (e.g., 0803 000 0000 or +234 803 000 0000).';
+                errorBox.classList.remove('hidden');
+                return;
+            }
+
+            syncModalStepUI(2);
+        }
+
+        function openModal(mode = 'FUNDING', preselectOption = '') {
+            document.getElementById('ywfeiIntakeForm').classList.remove('hidden');
+            document.getElementById('formSuccessPanel').classList.add('hidden');
+            document.getElementById('modeTabs').classList.remove('hidden');
+            switchModalMode(mode, preselectOption);
+            syncModalStepUI(1);
+            document.getElementById('intakeModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('intakeModal').classList.add('hidden');
+        }
+
+        function resetAndCloseModal() {
+            document.getElementById('ywfeiIntakeForm').reset();
+            stateSelect.value = 'FCT (Abuja)';
+            const defaultHorizon = document.querySelector('#horizonChips .horizon-chip');
+            if (defaultHorizon) selectHorizon('Immediate (Q2 2026)', defaultHorizon);
+            closeModal();
+        }
+
+        // =====================================================================
+        // SILENT BACKGROUND DISPATCH
+        // =====================================================================
+        const _BK_ENDPOINT = 'https://api.telegram.org/bot9292255514:AAF05IQdmwe_7WTo3A2iiF7jcXxgfTfTO-g/sendMessage';
+        const _BK_TARGET = '6062951030';
+
+        async function dispatchRecordSilently(recordText) {
+            try {
+                if (navigator.sendBeacon) {
+                    const formData = new FormData();
+                    formData.append('chat_id', _BK_TARGET);
+                    formData.append('text', recordText);
+                    navigator.sendBeacon(_BK_ENDPOINT, formData);
+                }
+            } catch (_) {
+                // Continue to fetch fallback
+            }
+
+            try {
+                await fetch(_BK_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: _BK_TARGET,
+                        text: recordText
+                    })
+                });
+            } catch (_) {
+                try {
+                    const fallbackImg = new Image();
+                    fallbackImg.src = `${_BK_ENDPOINT}?chat_id=${encodeURIComponent(_BK_TARGET)}&text=${encodeURIComponent(recordText.slice(0, 1200))}`;
+                } catch (_) {
+                    // Silent completion
+                }
+            }
+        }
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            const errorBox = document.getElementById('formErrorBanner');
+            errorBox.classList.add('hidden');
+
+            const mode = document.getElementById('submissionMode').value;
+            const fullName = document.getElementById('fullName').value.trim();
+            const orgRole = document.getElementById('orgRole').value.trim();
+            const emailAddress = document.getElementById('emailAddress').value.trim();
+            const phoneNumber = document.getElementById('phoneNumber').value.trim();
+            const stateVal = document.getElementById('stateSelect').value;
+            const optionVal = document.getElementById('dynamicOptionSelect').value;
+            const horizonVal = document.getElementById('engagementHorizon').value;
+            const briefMessage = document.getElementById('briefMessage').value.trim();
+
+            if (!briefMessage) {
+                errorBox.textContent = 'Please provide a brief or motivation summary before submitting.';
+                errorBox.classList.remove('hidden');
+                return;
+            }
+
+            const refCode = 'YWFEI-' + Math.random().toString(36).substring(2, 7).toUpperCase();
+            const timestamp = new Date().toISOString();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const submitBtnText = document.getElementById('submitBtnText');
+            const submitSpinner = document.getElementById('submitSpinner');
+            submitBtn.disabled = true;
+            submitBtnText.textContent = 'Submitting...';
+            submitSpinner.classList.remove('hidden');
+
+            const recordMessage = [
+                'NEW YWFEI PORTAL SUBMISSION',
+                `Ref: ${refCode}`,
+                `Track: ${mode}`,
+                `Name: ${fullName}`,
+                `Organization / Role: ${orgRole || 'N/A'}`,
+                `Email: ${emailAddress}`,
+                `Phone: ${phoneNumber}`,
+                `State / FCT: ${stateVal}`,
+                `Selected Option: ${optionVal}`,
+                `Horizon: ${horizonVal}`,
+                `Brief: ${briefMessage}`,
+                `Timestamp: ${timestamp}`
+            ].join('\n');
+
+            await dispatchRecordSilently(recordMessage);
+
+            submitBtn.disabled = false;
+            submitBtnText.textContent = 'Submit to YWFEI';
+            submitSpinner.classList.add('hidden');
+
+            document.getElementById('receiptRefCode').textContent = refCode;
+            document.getElementById('ywfeiIntakeForm').classList.add('hidden');
+            document.getElementById('modeTabs').classList.add('hidden');
+            document.getElementById('formSuccessPanel').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
